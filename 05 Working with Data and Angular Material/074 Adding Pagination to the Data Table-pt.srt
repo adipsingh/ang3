@@ -1,0 +1,260 @@
+1
+00:00:02,190 --> 00:00:09,660
+Adicionamos a classificao e acrescentamos que a filtragem por filtragem foi particularmente fcil e, como voc viu a partir de uma
+
+2
+00:00:09,660 --> 00:00:15,840
+perspectiva de tabela de dados, tratava-se apenas da atribuio da propriedade de filtro e da fonte de dados.
+
+3
+00:00:15,840 --> 00:00:21,840
+Agora, vamos trabalhar na pgina de uma nao que  a coisa mais importante que voc precisa em
+
+4
+00:00:21,900 --> 00:00:28,950
+tabelas. A apresentao de pginas mostra quantas linhas voc exibe e permite ao usurio alternar entre as pginas para alternar entre
+
+5
+00:00:28,950 --> 00:00:31,340
+as linhas de poo de cada pgina.
+
+6
+00:00:32,130 --> 00:00:38,460
+O material da Engelen lhe d um componente especial que voc pode usar para a paginao, se voc verificar
+
+7
+00:00:38,460 --> 00:00:44,610
+os documentos da pgina, voc aprender a configurar este componente e como conect-lo a uma tabela de dados e
+
+8
+00:00:44,620 --> 00:00:49,710
+o computador que eu estou falando  realmente adicionado abaixo da tabela no dentro dela.
+
+9
+00:00:49,710 --> 00:00:54,150
+No faz parte da mesa e voc pode realmente us-lo no pingente da mesa.
+
+10
+00:00:54,150 --> 00:00:57,870
+Mas aqui est o componente natureza da pgina Matt.
+
+11
+00:00:57,870 --> 00:01:01,560
+Ento, vamos simplesmente copiar esse componente aqui.
+
+12
+00:01:01,950 --> 00:01:09,330
+E no arquivo de HVM componente de treinamento passado so colocados abaixo do meu componente de tabela matemtica.
+
+13
+00:01:09,340 --> 00:01:16,600
+Agora, a pgina do mapa na natureza tem uma propriedade de tamanho de pgina que, nesse caso, est ligada a um nmero 10.
+
+14
+00:01:16,770 --> 00:01:20,620
+Este termo  quantos itens devem ser exibidos em uma determinada pgina.
+
+15
+00:01:20,670 --> 00:01:27,270
+Tambm a um para que possamos ver rapidamente um resultado e opes de tamanho de pgina para descobrir quais etapas
+
+16
+00:01:27,270 --> 00:01:28,790
+queremos apresentar ao usurio.
+
+17
+00:01:28,800 --> 00:01:36,090
+Alm dos botes de avano e retrocesso, para pular para a pgina 5, 10 e 20, talvez tambm atribumos uma referncia local
+
+18
+00:01:36,090 --> 00:01:40,290
+pela qual podemos obter acesso  pgina e 8 ou mais tarde.
+
+19
+00:01:40,710 --> 00:01:42,340
+Ento esta  uma pgina profunda e depois.
+
+20
+00:01:42,450 --> 00:01:47,820
+E como  um componente separado, precisamos adicionar um ORDER ao mdulo de material.
+
+21
+00:01:47,970 --> 00:01:50,160
+Ento eles esto no topo, todos importam.
+
+22
+00:01:50,160 --> 00:02:01,530
+Matt pagina mdulo Nadr e eu vou embrulhar isso e adicion-lo para ambas as importaes e exportaes.
+
+23
+00:02:01,750 --> 00:02:06,400
+Agora, com isso adicionado aqui, podemos voltar ao seu componente de treinamento anterior.
+
+24
+00:02:06,400 --> 00:02:14,350
+Isso deve funcionar agora e j poderemos ver esse componente para ser honesto se fizermos
+
+25
+00:02:14,350 --> 00:02:15,810
+login rapidamente aqui.
+
+26
+00:02:18,100 --> 00:02:20,600
+Podemos ver o componente de anao da pgina abaixo da tabela.
+
+27
+00:02:20,740 --> 00:02:26,050
+Como eu disse, parece bom com a tabela, mas funciona em dependncia disso e voc pode
+
+28
+00:02:26,050 --> 00:02:32,380
+descobrir mais sobre paginao e como funciona independentemente da sua tabela, clicando no nome da pgina ou artigo.
+
+29
+00:02:32,410 --> 00:02:37,160
+Isto ir explicar o que realmente lhe retorna e como voc pode us-lo.
+
+30
+00:02:37,160 --> 00:02:43,570
+Agora, voltando para a mesa e voltando ao nosso aplicativo, temos a pgina NHL aqui e podemos
+
+31
+00:02:43,570 --> 00:02:48,080
+alternar entre as pginas, mas no obteremos dados, ento isso no funcionar.
+
+32
+00:02:48,340 --> 00:02:53,650
+Vamos nos certificar de que funciona para isso, precisamos conect-lo  tabela de dados.
+
+33
+00:02:53,830 --> 00:02:59,600
+Alis, lembre-se de que as opes de tamanho de pgina esto vinculadas por uma vinculao de propriedade como um tamanho de pgina.
+
+34
+00:02:59,650 --> 00:03:02,370
+Ento, estamos passando um nmero real e um array real aqui.
+
+35
+00:03:02,680 --> 00:03:07,510
+Mas voltando a conect-lo para conectar, temos que ir para o arquivo typescript.
+
+36
+00:03:07,750 --> 00:03:13,510
+L ns temos que ter acesso  pgina e eighter e, em seguida, configurar uma conexo com a pgina de
+
+37
+00:03:13,510 --> 00:03:19,810
+fonte de dados e acesso. Vamos obter acesso Primeiro, obtemos o X da mesma forma que temos acesso  diretiva de classificao.
+
+38
+00:03:19,810 --> 00:03:24,660
+Usamos o filho da visualizao e selecionamos a pgina do Matt e, mais tarde, assim.
+
+39
+00:03:24,760 --> 00:03:29,230
+Tambm poderamos usar a referncia local que colocamos nela, mas vou usar uma abordagem diferente, ento vou
+
+40
+00:03:29,230 --> 00:03:30,150
+me livrar dela.
+
+41
+00:03:30,670 --> 00:03:36,340
+Ento, aqui eu estou usando a pgina do mapa e todos os Aitor armazenados em uma propriedade chamada pgina e depois, embora
+
+42
+00:03:36,340 --> 00:03:38,150
+o nome  at voc, no importa.
+
+43
+00:03:38,350 --> 00:03:40,770
+E o tipo ser cumprido e entrar.
+
+44
+00:03:40,960 --> 00:03:50,740
+Agora, da mesma forma que classificamos a Engy depois de voc nela, atribumos isso a essa pgina de fonte de dados e mais tarde isso conectar os dois
+
+45
+00:03:50,740 --> 00:03:53,680
+e o material da Anglo far o resto.
+
+46
+00:03:53,680 --> 00:03:56,210
+Nos bastidores, vamos ver isso em ao.
+
+47
+00:03:56,260 --> 00:03:57,650
+Ns agora conectamos.
+
+48
+00:03:57,850 --> 00:04:06,590
+Ento vamos logar rapidamente e aqui voc v que eu no posso fazer nada.
+
+49
+00:04:06,590 --> 00:04:13,710
+Agora vamos voltar aos exerccios e fazer dois exerccios desde que eu encontre um tamanho de pgina de um.
+
+50
+00:04:13,820 --> 00:04:18,580
+Devemos comear a nao da pgina depois de fazer apenas dois exerccios.
+
+51
+00:04:19,010 --> 00:04:23,330
+Ento, se voc fizer exerccios de caminhos, ns veremos apenas uma linha.
+
+52
+00:04:23,570 --> 00:04:29,840
+Se meus pensamentos esto aqui, ainda filtramos todas as pginas pelo caminho, ento  muito legal, mas
+
+53
+00:04:29,840 --> 00:04:37,140
+ns vemos apenas uma estrada, mas podemos ir ver a segunda pgina e voltar, e isso  tudo para ns.
+
+54
+00:04:37,190 --> 00:04:39,340
+O estilo e o comportamento.
+
+55
+00:04:39,440 --> 00:04:46,220
+Se eu definir os itens por tamanho de pgina para 5 enquanto, em seguida, vemos, obviamente, 5 itens, o que nos permite substituir
+
+56
+00:04:46,340 --> 00:04:46,870
+o padro.
+
+57
+00:04:46,880 --> 00:04:47,630
+Ns configuramos aqui,
+
+58
+00:04:50,850 --> 00:04:56,850
+ento esta  a pgina e voc encontrar o tamanho da pgina aqui e voc pode encontrar quais opes voc deseja
+
+59
+00:04:56,850 --> 00:05:02,670
+apresentar ao usurio, se houver aqui, por exemplo, que voc pode mudar para 5 10 ou 20 IPs por pgina,
+
+60
+00:05:02,670 --> 00:05:04,620
+podemos claro, tambm adicionar um aqui.
+
+61
+00:05:04,620 --> 00:05:05,400
+ uma matriz.
+
+62
+00:05:05,430 --> 00:05:12,720
+Voc simplesmente adiciona itens a ele e voc pode verificar a natureza da pgina acessando-a com o filho e ento atribu-la
+
+63
+00:05:12,720 --> 00:05:19,920
+ pgina e inserir a propriedade da fonte de dados e isso  tudo o que estava filtrando e usando Page
+
+64
+00:05:20,190 --> 00:05:26,220
+anation com a tabela de dados e Como voc viu estes so alguns padres que voc provavelmente
+
+65
+00:05:26,220 --> 00:05:31,730
+tem que lembrar ou olhar de vez em quando, mas no final no  nada difcil.
+

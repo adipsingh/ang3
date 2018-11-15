@@ -1,0 +1,44 @@
+1
+00:00:02,240 --> 00:00:05,160
+En este mdulo, nuevamente logramos mucho.
+
+2
+00:00:05,450 --> 00:00:13,040
+Agregamos una tabla de datos y adems agregamos servicios y modelos a toda la aplicacin para que nuestra aplicacin
+
+3
+00:00:13,040 --> 00:00:17,910
+no solo se vea bien sino que tambin funcione con datos dinmicos reales.
+
+4
+00:00:18,230 --> 00:00:24,140
+Y al final de este mdulo, aprender sobre la tabla de datos matemticos, un componente muy
+
+5
+00:00:24,140 --> 00:00:31,520
+poderoso que puede usarse para generar datos de forma estructurada en una tabla donde puede agregar fcilmente caractersticas como clasificacin
+
+6
+00:00:31,520 --> 00:00:35,670
+y filtrado, y nacin de pginas sin tener que escribe mucho cdigo
+
+7
+00:00:35,870 --> 00:00:39,870
+Eso es realmente poderoso y til en los prximos machos.
+
+8
+00:00:39,890 --> 00:00:41,830
+Continuaremos mejorando la savia.
+
+9
+00:00:41,940 --> 00:00:47,840
+Y, por ejemplo, conctese a un servidor real y veremos el poder de una chica de fuego mientras
+
+10
+00:00:47,840 --> 00:00:48,530
+lo hace.
+
+11
+00:00:48,560 --> 00:00:49,510
+Vamonos.
+

@@ -1,0 +1,656 @@
+1
+00:00:02,240 --> 00:00:06,770
+Resuelva poner algunos datos en nuestra aplicacin y sera agradable.
+
+2
+00:00:06,770 --> 00:00:10,770
+El nio lo puso de una manera estructurada en una mesa, tal vez.
+
+3
+00:00:11,280 --> 00:00:17,550
+Bueno, existe este componente de tabla de datos y este es un componente extremadamente poderoso que todava es fcil
+
+4
+00:00:17,550 --> 00:00:18,320
+de usar.
+
+5
+00:00:18,390 --> 00:00:21,510
+Pero detrs de escena hace muchas cosas increbles.
+
+6
+00:00:21,780 --> 00:00:26,000
+Echemos un vistazo si echamos un vistazo a la vista previa aqu.
+
+7
+00:00:26,040 --> 00:00:29,820
+Ves que es una mesa muy bien diseada aqu.
+
+8
+00:00:30,480 --> 00:00:36,580
+Y lo mejor de todo es que podemos agregar funciones como ordenar y filtrar pginas a la tabla.
+
+9
+00:00:36,840 --> 00:00:42,850
+Por ejemplo aqu filtro podemos agregar un tipo hidrogen o hidro y automatizaron el.
+
+10
+00:00:42,850 --> 00:00:44,820
+Esta tabla la estamos ordenando
+
+11
+00:00:45,060 --> 00:00:52,970
+Simplemente hacemos clic en un encabezado aqu y ordena los elementos en la tabla para la pgina de anation, por supuesto.
+
+12
+00:00:52,970 --> 00:00:59,660
+Bueno, podemos simplemente definir cuntos elementos deben estar en una pgina determinada y luego cambiarlos.
+
+13
+00:00:59,730 --> 00:01:07,350
+Echaremos un vistazo a todas estas caractersticas e implementaremos dicha tabla de datos para administrar nuestros
+
+14
+00:01:07,650 --> 00:01:09,470
+ejercicios finalizados o cancelados.
+
+15
+00:01:09,510 --> 00:01:12,900
+Ahora, para eso, cmo implementamos la tabla de datos?
+
+16
+00:01:13,040 --> 00:01:15,450
+Bueno, echemos un vistazo a su cdigo fuente.
+
+17
+00:01:15,450 --> 00:01:22,040
+Parece complejo, pero si te fijas bien, en realidad repite el mismo cdigo todo el tiempo.
+
+18
+00:01:22,140 --> 00:01:28,290
+Tenemos un componente de tabla matemtica de rap que nosotros y este es un aspecto central de este componente que
+
+19
+00:01:28,290 --> 00:01:30,090
+conectamos con alguna fuente de datos.
+
+20
+00:01:30,100 --> 00:01:31,840
+Ms sobre esto en un segundo.
+
+21
+00:01:32,430 --> 00:01:40,710
+Y luego obtenemos este elemento contenedor de energa, que se puede pensar como el mecanismo de
+
+22
+00:01:41,160 --> 00:01:50,430
+agrupamiento invisible que simplemente agrupa una celda de hetero y luego una celda normal para indicar qu elemento
+
+23
+00:01:50,430 --> 00:01:54,010
+o qu valor debe mostrarse en qu columna.
+
+24
+00:01:54,030 --> 00:02:00,000
+Entonces en la celda de encabezados tenemos el ttulo del encabezado de la columna y luego aqu tenemos
+
+25
+00:02:00,150 --> 00:02:06,480
+el valor de una sola fila de esta columna y Angola recorrer automticamente todos los valores en la fuente
+
+26
+00:02:06,480 --> 00:02:14,070
+de datos y repetir este patrn donde simplemente definiremos cmo se ver cada columna para todas las filas que tiene y nuestra
+
+27
+00:02:14,160 --> 00:02:19,100
+fuente de datos se indica que lo haga con las dos ltimas lneas aqu.
+
+28
+00:02:19,140 --> 00:02:23,760
+Esto le dice a todas las columnas que debemos encontrar su resultado.
+
+29
+00:02:23,760 --> 00:02:29,570
+Hice una fila y repito tantas filas de datos de filas como sea necesario.
+
+30
+00:02:30,000 --> 00:02:36,720
+As que aqu con find the columns y en la parte inferior definimos usar the had a row y luego generar
+
+31
+00:02:36,720 --> 00:02:38,760
+tantas filas de valores como sea necesario.
+
+32
+00:02:38,760 --> 00:02:41,520
+Esto es lo que hay dentro de esa mesa en la cabeza.
+
+33
+00:02:41,520 --> 00:02:42,850
+Ahora implemntelo.
+
+34
+00:02:43,200 --> 00:02:51,930
+Regresemos a nuestro cdigo y al entrenamiento anterior, de modo que la plantilla se deshaga de la tabla de agregar matemtica.
+
+35
+00:02:51,930 --> 00:03:00,690
+Entonces, este componente que envuelve toda la mesa se sent muerto y nos conectara con alguna fuente de datos.
+
+36
+00:03:00,900 --> 00:03:08,370
+Esto est vinculado por un enlace de propiedad y lo vincula a una propiedad denominada fuente de datos
+
+37
+00:03:08,400 --> 00:03:16,260
+que an no tengo, pero que aadir antes de agregar Vamos a definir realmente los planos para las columnas.
+
+38
+00:03:16,260 --> 00:03:21,540
+Recuerde que usamos el contenedor de energa que es el componente angular predeterminado que podemos
+
+39
+00:03:21,690 --> 00:03:27,830
+usar para agrupar cosas esencialmente aqu en el contenedor Engy que necesitamos asignar o agregar una directiva.
+
+40
+00:03:27,910 --> 00:03:35,190
+La muerte de Matt Colomb para una definicin de columna material dice al material de pescador o
+
+41
+00:03:35,430 --> 00:03:45,150
+la tabla de material que consideren todos los contenedores que tienen esta directiva y le daremos a cada columna un identificador claramente
+
+42
+00:03:45,360 --> 00:03:51,960
+identificado como fecha por ejemplo la fecha en que terminamos el ejercicio o lo cancelamos.
+
+43
+00:03:52,050 --> 00:03:54,480
+Ahora queremos definir una columna aqu.
+
+44
+00:03:54,480 --> 00:03:55,400
+Mantenlo en mente.
+
+45
+00:03:55,470 --> 00:03:59,360
+Definimos una columna, una columna tiene una celda de encabezado.
+
+46
+00:03:59,370 --> 00:04:04,980
+As que el ttulo y una celda de valores en el valor de las celdas se repiten para
+
+47
+00:04:05,790 --> 00:04:13,290
+todos los valores, ya que mencion las celdas del encabezado para encontrar el componente de la celda Mad Hatter aqu en este componente.
+
+48
+00:04:13,380 --> 00:04:22,080
+Agregamos estructuras que son efectivas indicadas por la estrella que se llama muerte de la celda del encabezado Matt para la definicin de
+
+49
+00:04:22,520 --> 00:04:23,910
+la celda del encabezado.
+
+50
+00:04:24,850 --> 00:04:29,730
+No necesita asignar un valor aqu simplemente como lo utiliza la tabla de Metts.
+
+51
+00:04:29,750 --> 00:04:37,480
+Internamente y luego simplemente define el ttulo de ese encabezado como fecha.
+
+52
+00:04:37,480 --> 00:04:43,750
+Ahora definamos un valor para la columna con celda de mapa y luego una directiva estructural que es
+
+53
+00:04:43,750 --> 00:04:48,230
+la directiva de muerte celular matemtica para la definicin de celda de materiales.
+
+54
+00:04:48,490 --> 00:04:51,860
+Y aqu tenemos que asignar ese elemento.
+
+55
+00:04:51,960 --> 00:04:53,760
+Ahora esto claramente parece extrao.
+
+56
+00:04:53,770 --> 00:05:01,630
+Esto simplemente nos da acceso a la propiedad de un elemento que nos pasar a travs de un componente de tabla de materiales
+
+57
+00:05:02,080 --> 00:05:07,660
+para que podamos generar el valor que obtenemos a travs de la denominacin de stringin aqu.
+
+58
+00:05:07,840 --> 00:05:14,950
+Entonces podemos acceder a la fecha del elemento y s que habr una propiedad de fecha porque
+
+59
+00:05:15,160 --> 00:05:23,230
+nuestra fuente de datos ser ms tarde nuestra matriz de ejercicios y cada ejercicio tiene una propiedad de fecha.
+
+60
+00:05:23,310 --> 00:05:27,420
+De vuelta a la fecha y ao del elemento de la plantilla.
+
+61
+00:05:27,450 --> 00:05:32,760
+Tambin agregar el tubo de fecha a un envo de tubera integrado con angular.
+
+62
+00:05:33,240 --> 00:05:35,170
+Entonces esta es nuestra primera columna.
+
+63
+00:05:35,310 --> 00:05:41,820
+Ya tenemos un montn de flechas aqu porque necesitamos desbloquear este componente para incluirlo en
+
+64
+00:05:42,300 --> 00:05:53,140
+nuestro paquete, de modo que el mdulo de material que agregar para importar el mdulo de la tabla mate lo agregar a las importaciones
+
+65
+00:05:53,350 --> 00:06:01,380
+y, por supuesto, tambin a las exportaciones en el material mdulo con eso podemos volver al componente de
+
+66
+00:06:01,510 --> 00:06:02,440
+comercio pasado.
+
+67
+00:06:02,920 --> 00:06:06,060
+Y ahora simplemente se han ido solo a las fuentes de datos y se han encontrado.
+
+68
+00:06:06,100 --> 00:06:07,700
+Pero eso tiene sentido.
+
+69
+00:06:07,990 --> 00:06:09,450
+Ahora tenemos ms de un color.
+
+70
+00:06:09,460 --> 00:06:12,310
+Entonces, repitamos este patrn aqu.
+
+71
+00:06:12,340 --> 00:06:15,840
+Tambin queremos tener una columna para el nombre del ejercicio.
+
+72
+00:06:16,030 --> 00:06:18,070
+Entonces el ttulo ser el nombre aqu.
+
+73
+00:06:18,130 --> 00:06:23,200
+Seguimos teniendo acceso al elemento, pero deberamos tener datos all por cierto.
+
+74
+00:06:23,680 --> 00:06:29,000
+Pero aqu tenemos el nombre del elemento X-ists y ya no necesito el tubo aqu.
+
+75
+00:06:29,140 --> 00:06:36,920
+Ahora tenemos ms columnas, as que agreguemos aqu la definicin de columna numrica para las caloras.
+
+76
+00:06:36,920 --> 00:06:41,240
+Quizs aqu le dar un ttulo de caloras.
+
+77
+00:06:41,260 --> 00:06:44,740
+Este es siempre el ttulo legible por humanos aqu, por supuesto.
+
+78
+00:06:44,740 --> 00:06:49,530
+Y luego voy a usar caloras de elementos aqu.
+
+79
+00:06:49,670 --> 00:06:54,190
+Ahora las caloras del barco se formatean con el nmero pi.
+
+80
+00:06:54,320 --> 00:06:56,860
+Esto les dar salida de una manera muy bien diseada.
+
+81
+00:06:57,880 --> 00:07:04,000
+Ahora hay una columna ms que quiero agregar con seguridad y esa es la duracin.
+
+82
+00:07:04,210 --> 00:07:10,700
+Entonces aqu el ttulo de duracin debe ser la duracin.
+
+83
+00:07:10,880 --> 00:07:13,420
+Y voy a la duracin del elemento X aqu.
+
+84
+00:07:13,550 --> 00:07:19,010
+Tambin usar el nmero de tubera aqu porque quiero formatear esto como el nmero dos.
+
+85
+00:07:19,400 --> 00:07:21,640
+Y finalmente tal vez este estado.
+
+86
+00:07:21,830 --> 00:07:24,580
+Entonces aqu est para el estado.
+
+87
+00:07:24,580 --> 00:07:29,750
+Quienquiera que haya sido cancelado o no aqu dar salida al estado del elemento.
+
+88
+00:07:29,750 --> 00:07:31,780
+No necesito una pipa aqu.
+
+89
+00:07:32,510 --> 00:07:35,890
+Ahora con eso obtenemos todas las columnas que quieres usar.
+
+90
+00:07:35,890 --> 00:07:39,250
+Ahora necesitamos instruir a la tabla de materiales para hacer algo.
+
+91
+00:07:39,340 --> 00:07:44,940
+En primer lugar, dir hola, quiero tener un encabezado, as que agregar la fila de encabezado Matt aqu.
+
+92
+00:07:45,370 --> 00:07:53,870
+All tambin tenemos que asignar una directiva estructural a la fila de encabezado Matt Rodanthe
+
+93
+00:07:53,870 --> 00:07:58,650
+y no importante. Configur esto para mostrar las columnas.
+
+94
+00:07:58,800 --> 00:08:04,890
+Antes de explicar qu pasa con eso, agreguemos tambin las instrucciones para representar todas las filas
+
+95
+00:08:04,890 --> 00:08:11,910
+que hacemos agregando una fila de coincidencia y asignando una directiva estructural de Navarrete que, por supuesto, es igual
+
+96
+00:08:11,910 --> 00:08:15,840
+que las directivas estructurales que provienen del material angular material.
+
+97
+00:08:15,840 --> 00:08:23,810
+As que aqu est la directiva estructural de muerte matemtica en ruta, donde simplemente digo "cmo se puede convertir a Rose
+
+98
+00:08:23,820 --> 00:08:29,850
+en Judas?", Al establecer la fila lache y luego encontrar las columnas para las que quiero
+
+99
+00:08:30,300 --> 00:08:33,810
+representar las filas y estas deberan ser mis columnas mostradas.
+
+100
+00:08:33,810 --> 00:08:41,370
+Ahora el texto de Holsten puede parecer bastante extrao y al final puede simplemente memorizarlo o buscarlo
+
+101
+00:08:41,370 --> 00:08:42,870
+en la documentacin.
+
+102
+00:08:42,870 --> 00:08:49,920
+Lo que est sucediendo es simplemente que estamos renderizando los encabezados para los ttulos de la tabla y
+
+103
+00:08:49,920 --> 00:08:54,840
+luego todas las filas para todos los valores que obtuvimos este Collin.
+
+104
+00:08:54,840 --> 00:08:56,400
+Lo de Cullen es importante.
+
+105
+00:08:56,400 --> 00:09:02,790
+Estamos conectando la tabla de mapas a una fuente de datos pero con columnas de visualizacin podemos controlar cul
+
+106
+00:09:02,790 --> 00:09:05,370
+de nuestras columnas definidas realmente queremos mostrar.
+
+107
+00:09:05,520 --> 00:09:08,720
+Esto nos permite cambiar dinmicamente como quisiramos.
+
+108
+00:09:09,210 --> 00:09:15,130
+Entonces, tenemos que hacer dos cosas para configurar las columnas mostradas y la fuente de datos.
+
+109
+00:09:15,270 --> 00:09:22,950
+Por lo tanto, en el archivo de mecanografa del componente de entrenamiento anterior agregar propiedades para ambos.
+
+110
+00:09:22,950 --> 00:09:26,480
+Agregar mi propiedad de Calamus que se muestra.
+
+111
+00:09:26,520 --> 00:09:34,220
+Esto tiene que ser un conjunto de cadenas y los nombres all tienen que coincidir con los nombres que asign aqu con la
+
+112
+00:09:34,290 --> 00:09:37,650
+muerte de la columna Matt en su contenedor de energa.
+
+113
+00:09:37,890 --> 00:09:43,790
+Entonces, si tienes un nombre de fecha y caloras aqu, debes hacer coincidir el desorden para encontrar qu columnas
+
+114
+00:09:43,790 --> 00:09:44,790
+se deben representar.
+
+115
+00:09:44,940 --> 00:09:47,320
+Entonces no quieres renderizarlos todos.
+
+116
+00:09:47,490 --> 00:09:53,780
+Nombre caloras de duracin y tambin defini su pedido aqu.
+
+117
+00:09:53,790 --> 00:10:02,410
+Por cierto, la cantidad de caloras es simple y puede cambiar fcilmente el orden cambiando el orden en
+
+118
+00:10:02,410 --> 00:10:03,540
+esta matriz.
+
+119
+00:10:03,550 --> 00:10:07,350
+Es por eso que nos unimos a las columnas mostradas.
+
+120
+00:10:07,380 --> 00:10:16,200
+Tambin necesito definir mi fuente de datos as que en la propiedad de fuente de datos y este ser un valor que tengo
+
+121
+00:10:16,200 --> 00:10:20,820
+que crear una instancia basada en algo que importo de material angular.
+
+122
+00:10:20,820 --> 00:10:30,290
+Tengo que crear una instancia de una nueva fuente de datos de tabla mapeada, importar esto desde cualquier material angular hasta su
+
+123
+00:10:30,560 --> 00:10:32,990
+fuente de datos de tabla matemtica.
+
+124
+00:10:33,440 --> 00:10:38,490
+Y esto es simplemente un objeto que permite conectar la tabla de materiales.
+
+125
+00:10:38,660 --> 00:10:43,370
+Es un objeto genrico donde defines qu tipo de datos ests pasando.
+
+126
+00:10:43,370 --> 00:10:46,070
+Para nosotros va a ser un ejercicio.
+
+127
+00:10:46,670 --> 00:10:50,980
+Entonces, tenemos que importar ejercicio de nuestro modelo de ejercicio.
+
+128
+00:10:51,110 --> 00:10:53,940
+Entonces importa ejercicio desde.
+
+129
+00:10:54,000 --> 00:10:58,390
+Y ahora subimos un nivel al archivo del modelo de ejercicio.
+
+130
+00:10:58,400 --> 00:11:05,360
+Ahora estamos conectando un ejercicio a la fuente de datos de la tabla matemtica y ahora correctamente dira
+
+131
+00:11:05,360 --> 00:11:07,910
+que no utilizamos una variedad de ejercicios.
+
+132
+00:11:08,180 --> 00:11:15,560
+S, lo hacemos, pero dado que estamos trabajando con un origen de datos de tabla de tabla mxima siempre esperamos obtener una matriz
+
+133
+00:11:15,560 --> 00:11:17,700
+de cualquier tipo que est pasando aqu.
+
+134
+00:11:17,930 --> 00:11:24,380
+Entonces, si est pasando una serie de ejercicios, simplemente defina ejercicios de ejercicio para que los tipos no hagan ejercicio de esta
+
+135
+00:11:24,380 --> 00:11:24,670
+manera.
+
+136
+00:11:24,670 --> 00:11:29,120
+No es una variedad de ejercicios que asumir automticamente esto.
+
+137
+00:11:29,140 --> 00:11:37,840
+Ahora con esto tenemos nuestra fuente de datos y ahora eso ya debera ser todo lo que necesitamos para
+
+138
+00:11:37,900 --> 00:11:40,150
+hacer nuestro ejercicio pasado tambin.
+
+139
+00:11:40,180 --> 00:11:47,350
+Aunque, por supuesto, necesitamos completar la fuente de datos y para esto necesitamos el servicio de capacitacin porque
+
+140
+00:11:47,380 --> 00:11:49,790
+aqu es donde viven nuestros datos.
+
+141
+00:11:49,870 --> 00:11:57,960
+Entonces, todo lo que se inyecta en este componente con la ayuda del constructor de los servicios de capacitacin del curso, una propiedad que
+
+142
+00:11:57,960 --> 00:12:03,780
+creo de tipo de servicio de comercializacin, asegrese de agregar la importacin al archivo del servicio de capacitacin.
+
+143
+00:12:04,800 --> 00:12:14,310
+Y luego, en Engy, establecer esta fuente de datos y luego habr una propiedad de datos igual a
+
+144
+00:12:14,310 --> 00:12:18,740
+este servicio de capacitacin y luego todos nuestros ejercicios.
+
+145
+00:12:18,760 --> 00:12:24,770
+Ahora para eso agregar rpidamente un mtodo de ayuda porque an no tenemos ese mtodo.
+
+146
+00:12:25,640 --> 00:12:30,740
+Ejercicios completados o cancelados tal vez.
+
+147
+00:12:31,040 --> 00:12:38,630
+Y simplemente devolver estos tamaos de EXOR y la divisin de devolucin para obtener una copia nueva.
+
+148
+00:12:38,650 --> 00:12:40,210
+Aunque en realidad no importa aqu.
+
+149
+00:12:41,790 --> 00:12:48,840
+Ahora, en los entrenamientos anteriores, todos los conectados a este servicio de capacitacin obtienen ejercicios completados o cancelados,
+
+150
+00:12:49,160 --> 00:12:54,750
+y esto les devuelve una serie de ejercicios y, como puede ver, no se quejan
+
+151
+00:12:54,750 --> 00:12:58,510
+porque esperan obtener una variedad del tipo que configuren aqu.
+
+152
+00:12:58,530 --> 00:13:04,830
+Ahora, si guardamos esto y volvemos a nuestra aplicacin, iniciamos sesin rpidamente aqu.
+
+153
+00:13:05,870 --> 00:13:13,530
+Comencemos un nuevo ejercicio y vamos con eso.
+
+154
+00:13:13,710 --> 00:13:20,090
+Y en ejercicios anteriores ahora vemos este ejercicio, como ves, solo obtenemos una fraccin de
+
+155
+00:13:20,450 --> 00:13:24,350
+la duracin que realmente tuvimos si completamos el ejercicio.
+
+156
+00:13:24,380 --> 00:13:25,430
+Veamos lo opuesto.
+
+157
+00:13:25,460 --> 00:13:31,540
+Al completar algunos Burpy el ao pasado, avanzar rpidamente hasta que esto se haga.
+
+158
+00:13:32,610 --> 00:13:37,680
+Y ya casi terminamos, echemos un vistazo a los ejercicios anteriores.
+
+159
+00:13:37,680 --> 00:13:44,790
+Aqu obtuvimos herpes completo de 60 segundos y cancelaciones de cancelacin.
+
+160
+00:13:44,790 --> 00:13:51,350
+Ahora, una cosa que creo que est yendo mal es en el servicio de capacitacin.
+
+161
+00:13:51,540 --> 00:13:59,310
+Por supuesto, queremos almacenar este ejercicio de caloras sin duracin multiplicado por su progreso, pero
+
+162
+00:13:59,790 --> 00:14:01,270
+eso es todo.
+
+163
+00:14:01,350 --> 00:14:03,550
+Nuestra mesa est funcionando.
+
+164
+00:14:03,690 --> 00:14:05,290
+Veamos cmo podemos ajustarlo.
+

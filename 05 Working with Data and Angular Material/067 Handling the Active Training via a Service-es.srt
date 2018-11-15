@@ -1,0 +1,224 @@
+1
+00:00:02,290 --> 00:00:08,230
+Asegurmonos de utilizar los datos de la capacitacin no seleccionada, ya que la almacenamos en el servicio de
+
+2
+00:00:08,770 --> 00:00:11,120
+capacitacin de nuestro componente de capacitacin actual.
+
+3
+00:00:11,410 --> 00:00:14,270
+As que seleccionamos el entrenamiento y lo almacenamos y ejecutamos el ejercicio.
+
+4
+00:00:14,290 --> 00:00:15,390
+Lo hacemos este ao.
+
+5
+00:00:15,550 --> 00:00:19,940
+De hecho, incluso emitimos un evento cada vez que elegimos un nuevo entrenamiento.
+
+6
+00:00:19,960 --> 00:00:24,150
+Ahora necesitamos usar esa informacin en el componente de capacitacin actual.
+
+7
+00:00:24,460 --> 00:00:30,340
+Tenga en cuenta que cargaremos el componente de capacitacin actual cada vez que comencemos una nueva capacitacin.
+
+8
+00:00:30,340 --> 00:00:32,170
+Entonces, cmo extraemos esos datos?
+
+9
+00:00:32,180 --> 00:00:36,450
+Y ahora estn en el componente de capacitacin actual.
+
+10
+00:00:36,540 --> 00:00:40,560
+En primer lugar quiero inyectar el servicio de capacitacin.
+
+11
+00:00:40,830 --> 00:00:50,370
+Entonces, adems de inyectar el dilogo tape aqu tambin se inyecta el servicio de entrenamiento privado del tipo servicio de capacitacin y eso es
+
+12
+00:00:50,550 --> 00:00:56,280
+algo que todos deben agregar aqu como un servicio de capacitacin de importacin del
+
+13
+00:00:56,460 --> 00:00:58,250
+archivo del servicio de capacitacin.
+
+14
+00:00:59,370 --> 00:01:08,160
+Una vez hecho esto y, por lo tanto, lo incluimos aqu, podemos inicializar nuestro componente con la
+
+15
+00:01:08,220 --> 00:01:09,360
+capacitacin seleccionada.
+
+16
+00:01:09,400 --> 00:01:10,650
+Entonces, qu significa esto.
+
+17
+00:01:11,950 --> 00:01:20,020
+Esto significa que aqu, en el pozo central, estos pasos por los cuales queremos aumentar esto, en
+
+18
+00:01:20,020 --> 00:01:24,610
+realidad, debe depender de la duracin del entrenamiento seleccionado.
+
+19
+00:01:24,620 --> 00:01:29,000
+Tambin podra tener sentido generar el nombre de la capacitacin actual.
+
+20
+00:01:29,480 --> 00:01:35,720
+As que aqu en este momento solo sacamos una motivacin en esa frase y el progreso del
+
+21
+00:01:35,870 --> 00:01:39,400
+curso tambin podramos poner el nombre del ejercicio seleccionado.
+
+22
+00:01:39,470 --> 00:01:43,860
+Comencemos con los pasos aqu y comience o reasuma el temporizador.
+
+23
+00:01:44,030 --> 00:01:48,050
+Necesito acceso a la capacitacin selectiva en el servicio de capacitacin.
+
+24
+00:01:48,110 --> 00:01:59,870
+Actualmente, Hightower's es una propiedad privada, as que debera agregar un ejercicio de Meffert running running en el que devuelvo un nuevo objeto que
+
+25
+00:01:59,870 --> 00:02:08,810
+simplemente es una copia de este ejercicio de ejecucin nuevamente para asegurarme de que no puedo mutar esto
+
+26
+00:02:08,860 --> 00:02:11,090
+desde fuera del servicio.
+
+27
+00:02:11,180 --> 00:02:17,630
+Ahora puedo llamar al ejercicio de correr para obtener datos sobre el ejercicio de carrera y lo
+
+28
+00:02:17,690 --> 00:02:21,380
+har en el temporizador de inicio o reanudacin all.
+
+29
+00:02:21,380 --> 00:02:23,410
+Necesito calcular un paso.
+
+30
+00:02:23,750 --> 00:02:29,040
+Digamos que queremos incrementar el progreso en uno y no en cinco.
+
+31
+00:02:29,060 --> 00:02:32,110
+Esto significa que necesitamos 100 pasos para llegar al 100 por ciento.
+
+32
+00:02:32,200 --> 00:02:39,080
+Y esto es inamovible porque la hilera de progreso Met funciona de una manera que va de 0 a 100.
+
+33
+00:02:39,080 --> 00:02:46,400
+Lo que podemos cambiar es la rapidez con que se actualiza de un paso de progreso al siguiente, por lo que el paso no necesariamente
+
+34
+00:02:46,400 --> 00:02:48,020
+tiene que ser de un segundo.
+
+35
+00:02:48,320 --> 00:02:57,630
+Si nuestro entrenamiento toma 40 segundos, un paso debe ser 100 dividido entre 30 o en realidad, ya que
+
+36
+00:02:58,200 --> 00:03:02,490
+es en milisegundos 100 dividido entre 30 veces 1000.
+
+37
+00:03:02,550 --> 00:03:11,740
+Entonces, si nuestra duracin del ejercicio es 30, entonces queremos ejecutar este proceso 100 dividido por 30
+
+38
+00:03:12,060 --> 00:03:18,850
+veces, ya que estamos en milisegundos, es 100 dividido por 30 veces 1000.
+
+39
+00:03:18,890 --> 00:03:30,030
+En otras palabras, se puede tomar un paso del servicio de entrenamiento y del ejercicio de correr accediendo a la duracin
+
+40
+00:03:30,030 --> 00:03:38,580
+de ese ejercicio y dividindolo por 100 porque 100 es nuestro porcentaje mximo fijo ya que
+
+41
+00:03:39,270 --> 00:03:42,980
+tenemos varios segundos multiplicamos esto por 1000.
+
+42
+00:03:43,140 --> 00:03:46,200
+Y ahora tenemos el valor de paso.
+
+43
+00:03:46,470 --> 00:03:53,610
+As que ahora puedo usar Stapp en lugar de 1000 para tener una duracin de un giro de
+
+44
+00:03:53,700 --> 00:03:57,880
+progreso que toma en cuenta la duracin del ejercicio. Probmoslo.
+
+45
+00:03:57,940 --> 00:04:02,950
+Volvamos a la aplicacin en ejecucin, inicie sesin rpidamente con algunos datos aleatorios.
+
+46
+00:04:03,040 --> 00:04:06,110
+Seleccione el ejercicio como trincheras y haga clic en comenzar.
+
+47
+00:04:06,430 --> 00:04:11,250
+Y ahora ves actualizaciones as.
+
+48
+00:04:11,310 --> 00:04:17,060
+Si toco, pare aqu y salga y selecciono un ejercicio diferente.
+
+49
+00:04:17,340 --> 00:04:21,610
+Ahora es mucho ms lento porque el tacto eligi cul selecciono la lgrima.
+
+50
+00:04:21,810 --> 00:04:27,520
+Si echas un vistazo al servicio de negociacin en realidad tienen una duracin mucho ms larga.
+
+51
+00:04:27,540 --> 00:04:30,520
+Estos son minutos gratis en lugar de 30 segundos.
+
+52
+00:04:30,540 --> 00:04:33,250
+Entonces esto est funcionando ahora.
+
+53
+00:04:33,270 --> 00:04:39,780
+Lo que tambin necesito asegurar es que cuando detengamos el entrenamiento o cuando termine
+
+54
+00:04:39,780 --> 00:04:47,340
+naturalmente, tambin lo comuniquemos al servicio de capacitacin y almacenemos el ejercicio como cancelado o completado
+
+55
+00:04:47,340 --> 00:04:48,550
+con xito.
+
+56
+00:04:48,590 --> 00:04:51,750
+Esto es algo a lo que nos referiremos en la prxima conferencia.
+

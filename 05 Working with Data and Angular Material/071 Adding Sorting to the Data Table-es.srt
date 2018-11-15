@@ -1,0 +1,288 @@
+1
+00:00:02,270 --> 00:00:05,490
+Agregamos la tabla de datos en la ltima conferencia.
+
+2
+00:00:05,660 --> 00:00:09,560
+Ahora agreguemos fallas de ordenamiento y anlisis de pgina.
+
+3
+00:00:09,710 --> 00:00:15,650
+Comencemos con la clasificacin para que podamos ordenar convenientemente por caloras. Lo que sea que queramos hacer
+
+4
+00:00:16,570 --> 00:00:24,510
+para agregar clasificacin, necesitamos trabajar ambos en D. H. cdigo femenino de nuestra tabla de datos, as como el cdigo de tipos.
+
+5
+00:00:24,530 --> 00:00:26,870
+Comencemos con H. T. correo.
+
+6
+00:00:26,900 --> 00:00:31,780
+Antes que nada, tenemos que agregar la directiva math sword a la tabla de matemtica.
+
+7
+00:00:32,090 --> 00:00:39,390
+Esto hace que sea ordenable para decir que no tenemos que definir por qu letras podemos ordenar porque de manera predeterminada no
+
+8
+00:00:39,420 --> 00:00:43,250
+se puede ordenar ninguna columna de encabezado y eso es bueno.
+
+9
+00:00:43,260 --> 00:00:51,620
+Algunas columnas no constituyen buenas columnas de clasificacin, por lo tanto, qu columnas queremos ordenar por quizs la fecha?
+
+10
+00:00:51,810 --> 00:00:57,630
+Bueno, entonces agregamos una directiva especial al componente de celda del hetero mat y eso dirige
+
+11
+00:00:57,780 --> 00:00:59,420
+el encabezado Saward de mat.
+
+12
+00:00:59,430 --> 00:01:03,020
+En realidad, esta no es una directiva, sino un selector de componentes para ser precisos.
+
+13
+00:01:03,110 --> 00:01:05,960
+Entonces agregamos dos celdas de encabezados coincidentes.
+
+14
+00:01:06,000 --> 00:01:10,830
+Usted agrega este selector de encabezado a todas las columnas.
+
+15
+00:01:10,860 --> 00:01:19,140
+Quiero que ordene mi caso as que tambin quiero ordenar por nombre por caloras y por duracin y tambin
+
+16
+00:01:19,140 --> 00:01:19,820
+por estado.
+
+17
+00:01:19,820 --> 00:01:23,100
+Entonces para m son todas las columnas, pero esto no es obligatorio.
+
+18
+00:01:23,100 --> 00:01:26,640
+Tambin puedes usar algunas de las columnas.
+
+19
+00:01:26,690 --> 00:01:30,970
+Entonces con eso agregamos esta lgica de clasificacin aqu.
+
+20
+00:01:30,980 --> 00:01:39,890
+Ahora solo tenemos que hacer algo en nuestro archivo de texto mecanografiado para el desafo del componente de capacitacin anterior, necesitamos adjuntar alguna
+
+21
+00:01:39,920 --> 00:01:44,990
+propiedad especial de la fuente de datos a nuestras operaciones matemticas o directas.
+
+22
+00:01:44,990 --> 00:01:50,170
+Si aadimos el componente a esta directiva, ahora est detrs de escena.
+
+23
+00:01:50,170 --> 00:01:51,930
+Muchas cosas estn sucediendo.
+
+24
+00:01:51,940 --> 00:01:58,330
+Bsicamente se trata de descubrir qu encabezados deberan ser ordenables y conectaremos todo, y
+
+25
+00:01:58,330 --> 00:02:02,320
+establecemos esta conexin obteniendo una referencia a nuestra.
+
+26
+00:02:02,360 --> 00:02:09,640
+Directiva de Matt Saward para esto podemos usar view child, que como sabe, le brinda una manera de obtener
+
+27
+00:02:09,640 --> 00:02:14,370
+acceso a elementos para encontrar en su plantilla en sus tipos de archivos.
+
+28
+00:02:14,380 --> 00:02:19,670
+As que aqu agregar al hijo del espectador y quiero acceder al gnero Matt.
+
+29
+00:02:19,870 --> 00:02:23,980
+Debe importar esto desde material angular.
+
+30
+00:02:24,010 --> 00:02:32,440
+Esto se refiere a la directiva de matemtica que aadimos a la tabla aqu ahora, al acceder a ella en el
+
+31
+00:02:32,690 --> 00:02:35,860
+futuro no tenemos acceso a toda la tabla.
+
+32
+00:02:35,860 --> 00:02:37,510
+Esta directiva est sentada.
+
+33
+00:02:37,510 --> 00:02:45,090
+Pero realmente solo la clasificacin subyacente establece el material angular en adelante para nosotros debido a esta combinacin de matemtica
+
+34
+00:02:45,090 --> 00:02:53,010
+o matemtica o lo que sea de los das de almacenamiento configuracin subyacente para ponerlo as se almacena en una propiedad
+
+35
+00:02:53,010 --> 00:02:58,390
+de clasificacin, el nombre es totalmente de usted. que ser del tipo de tipo mapeado.
+
+36
+00:02:58,500 --> 00:03:01,620
+Entonces, para escribir, estamos seleccionando aqu con su hijo.
+
+37
+00:03:02,220 --> 00:03:09,330
+Ahora tenemos que asignar esto a la fuente de datos para que no podamos hacer esto con la ONG, ya que
+
+38
+00:03:09,330 --> 00:03:14,140
+estamos obteniendo esto de la plantilla y la plantilla no est lista en este momento.
+
+39
+00:03:14,280 --> 00:03:19,980
+Entonces usar un aspecto diferente del ciclo de vida despus del inicio.
+
+40
+00:03:20,100 --> 00:03:24,960
+Esto necesita ser importado desde un ngulo o un compaero de trabajo.
+
+41
+00:03:25,200 --> 00:03:33,610
+As que agreguemos rpidamente la importacin aqu para revisarla y Annette y esto nos obliga a ofrecer al final ofter view en el
+
+42
+00:03:33,620 --> 00:03:39,140
+mtodo aqu que se ejecuta una vez que se termina la representacin y la inicializacin.
+
+43
+00:03:39,170 --> 00:03:43,500
+Entonces aqu establecer esta fuente de fuente de datos.
+
+44
+00:03:43,620 --> 00:03:48,200
+Una propiedad que el objeto fuente de datos tiene igual a este tipo.
+
+45
+00:03:48,200 --> 00:03:53,270
+Entonces, a esta configuracin la recuperamos de la plantilla para decirla y eso es todo.
+
+46
+00:03:53,270 --> 00:04:03,050
+Ahora, si volvemos a la aplicacin en funcionamiento y nuevamente iniciamos sesin rpidamente y simplemente dejamos un
+
+47
+00:04:03,050 --> 00:04:15,440
+par de ejercicios para que tengamos algo que ver que hacemos, entonces vemos que tenemos ejercicios y ningn mecanismo de clasificacin.
+
+48
+00:04:15,460 --> 00:04:19,540
+Tampoco tenemos ningn error de lo que est mal.
+
+49
+00:04:19,570 --> 00:04:27,290
+Esto es algo que puede estropear fcilmente o simplemente no saber que el componente de tabla mxima que lo incluye agregando
+
+50
+00:04:27,310 --> 00:04:34,240
+el mdulo de tabla matemtica en el mdulo de material no incluye la clasificacin de pgina de clasificacin y
+
+51
+00:04:34,240 --> 00:04:35,190
+el filtrado.
+
+52
+00:04:35,320 --> 00:04:39,910
+Simplemente tenemos que agregar estas importaciones por separado y es muy engaoso.
+
+53
+00:04:39,940 --> 00:04:42,630
+Ni siquiera recibimos una advertencia si no hacemos eso.
+
+54
+00:04:42,640 --> 00:04:45,640
+Entonces aqu tenemos que agregar el mdulo de fuente matemtica.
+
+55
+00:04:45,640 --> 00:04:49,900
+Y como con todos los otros mdulos, tenemos que agregarlo a las importaciones.
+
+56
+00:04:50,080 --> 00:04:54,320
+Y, por supuesto, todo debido a las exportaciones para que est disponible para Irn.
+
+57
+00:04:54,700 --> 00:05:03,480
+Ahora con eso podemos volver atrs y hacer esto otra vez, iniciar sesin rpidamente con algunos datos ficticios y obtener
+
+58
+00:05:03,570 --> 00:05:04,660
+un error aqu.
+
+59
+00:05:06,040 --> 00:05:13,660
+La razn por la que usted sabe el motivo es que el encabezado de Matt Sored est incorrectamente agregado al contenedor de energa aqu, por supuesto, debera
+
+60
+00:05:13,660 --> 00:05:17,520
+ser un componente de Mad Hatter para vender un componente en todos los casos.
+
+61
+00:05:17,550 --> 00:05:20,760
+Entonces ese fue un error dbil aqu.
+
+62
+00:05:20,800 --> 00:05:25,690
+Asegrate de no cometer este error, pero ahora ves bien que hay una cosa que puede salir mal.
+
+63
+00:05:25,810 --> 00:05:33,050
+Pero ahora con eso arreglado si nos conectamos de nuevo ahora, deberamos ser capaces de ejecutar un montn de abdominales.
+
+64
+00:05:33,070 --> 00:05:33,760
+Para esto.
+
+65
+00:05:33,760 --> 00:05:35,410
+No necesitas esperar por eso.
+
+66
+00:05:35,590 --> 00:05:39,630
+Comience con una pieza y tambin detenga eso.
+
+67
+00:05:39,630 --> 00:05:47,410
+Y ahora, en ejercicios anteriores, podemos ordenar por Callard una duracin, disclpeme caloras por estado, que es el
+
+68
+00:05:47,410 --> 00:05:49,350
+mismo que su nombre.
+
+69
+00:05:49,510 --> 00:05:54,760
+Y, por supuesto, la fecha y aqu hasta la fecha se ve igual, pero tambin se guardan 10 minutos, etc.
+
+70
+00:05:54,760 --> 00:05:56,520
+Es por eso que podemos ordenar por eso.
+
+71
+00:05:56,860 --> 00:06:04,840
+As que el ADN est clasificando lo que funciona en la caja con algunos ajustes y adiciones en la prxima conferencia.
+
+72
+00:06:04,840 --> 00:06:06,340
+Echemos un vistazo al filtrado.
+

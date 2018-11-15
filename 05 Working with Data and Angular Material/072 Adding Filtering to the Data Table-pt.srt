@@ -1,0 +1,236 @@
+1
+00:00:02,350 --> 00:00:10,020
+Vamos adicionar alguns filtros  nossa tabela de matemtica, a filtragem  surpreendentemente simples.
+
+2
+00:00:10,030 --> 00:00:16,010
+Primeiro de tudo, precisamos adicionar a entrada em que o usurio pode digitar que estamos acima das tabelas de
+
+3
+00:00:16,010 --> 00:00:17,090
+matemtica, no dentro dela.
+
+4
+00:00:17,290 --> 00:00:18,760
+No est estritamente ligado a ele.
+
+5
+00:00:18,760 --> 00:00:19,920
+ uma entrada neural.
+
+6
+00:00:19,990 --> 00:00:23,030
+Assim como voc poderia adicion-lo em qualquer outro lugar na sua pgina.
+
+7
+00:00:23,140 --> 00:00:29,100
+Ento, voc est no mapa para ter uma boa aparncia com um rtulo flutuante e assim por diante.
+
+8
+00:00:29,260 --> 00:00:33,780
+E ento h e nenhuma entrada real com entrada de matemtica como uma diretiva.
+
+9
+00:00:34,030 --> 00:00:38,920
+E isso  quase tambm definir um tempo para o texto.
+
+10
+00:00:38,920 --> 00:00:41,130
+Ento, este  agora meu campo de entrada completo.
+
+11
+00:00:41,150 --> 00:00:44,620
+Eu quero usar agora nesse campo de entrada.
+
+12
+00:00:44,860 --> 00:00:48,700
+Quero registrar um ouvinte de evento que  acionado sempre que digitamos.
+
+13
+00:00:49,000 --> 00:00:51,650
+Ento, adicionarei um ouvinte de chave.
+
+14
+00:00:52,180 --> 00:01:00,820
+E aqui eu vou executar para filtrar Meffert onde eu quero encaminhar o valor para o usurio digitado. Eu posso acessar isso
+
+15
+00:01:00,820 --> 00:01:06,520
+no cifro mesmo o Optik Angler me d isto simplesmente e fecha o evento Dom
+
+16
+00:01:06,580 --> 00:01:08,170
+padro que  emitido.
+
+17
+00:01:08,170 --> 00:01:11,090
+E a ele conecta o alvo e passa o valor.
+
+18
+00:01:11,190 --> 00:01:19,960
+Portanto,  de se esperar que a string que o usurio inseriu tambm adicione um espao reservado  entrada onde eles dizem FELTER.
+
+19
+00:01:20,040 --> 00:01:23,520
+Ento este  agora meu campo de entrada.
+
+20
+00:01:23,660 --> 00:01:30,310
+Em seguida, quero usar isso, ento preciso implementar o mtodo de filtro duplo no meu componente.
+
+21
+00:01:30,440 --> 00:01:38,350
+Ento, adicionarei um novo mtodo para filtrar onde obterei o valor total que ser uma string.
+
+22
+00:01:38,390 --> 00:01:46,250
+Ento  isso que o usurio que eu conheo pode filtrar muito simplesmente simplesmente acessando a fonte de dados
+
+23
+00:01:46,610 --> 00:01:52,480
+e eles esto definindo a propriedade de filtro igual  string que eu tenho aqui.
+
+24
+00:01:52,610 --> 00:02:00,650
+Ento, para filtrar o valor, a nica coisa que quero fazer  querer chamar trim para remover qualquer espao em
+
+25
+00:02:00,650 --> 00:02:02,480
+branco e depois para minsculas.
+
+26
+00:02:02,510 --> 00:02:12,470
+A razo para isso  a fonte de dados de materiais angulares ou angulares mortos ou uma tabela de materiais
+
+27
+00:02:12,470 --> 00:02:16,160
+no final concatenar todos os valores de zero.
+
+28
+00:02:16,310 --> 00:02:22,580
+Ento, se tivermos durao de calorias e assim por diante, ao lado de chavrusa, colocaremos tudo isso
+
+29
+00:02:22,580 --> 00:02:29,990
+em uma linha e procuraremos por nossa string filtrada aqui, nessa longa string que  criada fazendo assim, sempre levar em
+
+30
+00:02:29,990 --> 00:02:37,880
+conta todas as linhas e ns portanto, deve fornecer uma seqncia de caracteres que  aparada e todas as minsculas porque angular
+
+31
+00:02:38,090 --> 00:02:44,690
+tambm colocar sua longa seqncia de caracteres em minsculas, de modo que tenhamos uma caixa exclusiva para a
+
+32
+00:02:44,690 --> 00:02:45,390
+qual falhemos.
+
+33
+00:02:45,500 --> 00:02:47,890
+E ento no precisamos nos preocupar com o revestimento.
+
+34
+00:02:48,080 --> 00:02:54,380
+Voc pode substituir seu mecanismo de filtragem padro e pode ler mais sobre isso na pgina da
+
+35
+00:02:54,410 --> 00:02:56,820
+tabela de dados clicando em filtragem.
+
+36
+00:02:56,840 --> 00:03:04,120
+L voc v l voc pode lanar sua prpria funo de predicado de filtro se voc quiser sobrescrever isto.
+
+37
+00:03:04,130 --> 00:03:09,470
+Agora de volta ao nosso cupholder embora aqui eu no quero substituir isso e, em muitos casos,
+
+38
+00:03:09,470 --> 00:03:10,260
+voc no quer.
+
+39
+00:03:10,460 --> 00:03:13,720
+Ento, vamos simplesmente garantir que todos os arquivos sejam salvos.
+
+40
+00:03:13,970 --> 00:03:22,220
+E ento vamos rapidamente fazer o login aqui e comear alguns exerccios e cancel-los como antes.
+
+41
+00:03:22,340 --> 00:03:24,730
+S que ns temos alguns valores.
+
+42
+00:03:25,100 --> 00:03:35,510
+Sim e agora temos que as entradas de filtro que precisamos para trabalhar no posicionamento, mas vai funcionar se eu entrar.
+
+43
+00:03:35,520 --> 00:03:42,620
+Aqui voc v com a totalidade os quatro crunches awls se eu entrar em minsculas se eu digitar 0. 6 ns s vemos adoraes do Mundo
+
+44
+00:03:42,630 --> 00:03:44,370
+Morto Sirat 6.
+
+45
+00:03:44,520 --> 00:03:51,280
+Se o meu filtro para ave ILEC a parte de pssaro faz isso como fcil que funciona.
+
+46
+00:03:51,300 --> 00:03:59,180
+Agora vamos nos certificar de que o posicionamento est correto e eu fao isso voltando ao
+
+47
+00:03:59,180 --> 00:04:07,970
+meu componente e h dois H. T. arquivo de correio e ns simplesmente precisamos de estilo H campo o campo
+
+48
+00:04:08,030 --> 00:04:10,120
+de entrada que posicionamos acima da tabela de material l.
+
+49
+00:04:10,130 --> 00:04:17,150
+Eu vou embrulhar isso em uma morte, ento vamos embrulhar isso e coloc-lo
+
+50
+00:04:20,150 --> 00:04:29,290
+na div e eu vou adicionar X esquematizar seus fatos traar uma linha para ser preciso
+
+51
+00:04:31,910 --> 00:04:39,770
+e definir isso para o centro e dar a ele uma largura de 40%.
+
+52
+00:04:39,770 --> 00:04:41,540
+Agora vamos dar uma olhada nisso.
+
+53
+00:04:44,110 --> 00:04:50,290
+Ns no precisamos adicionar novos valores para o Nabl para podermos ver isso e isso parece pronto
+
+54
+00:04:50,290 --> 00:04:51,310
+para mim. Eu
+
+55
+00:04:55,940 --> 00:04:59,750
+devo nomear este espao reservado para ver o espao reservado.
+
+56
+00:05:00,000 --> 00:05:08,190
+Ento, agora, se voc voltar mais uma vez, devemos ter um campo de pasta com boa aparncia aqui definido sobre a
+
+57
+00:05:08,190 --> 00:05:09,360
+tabela de dados.
+
+58
+00:05:09,600 --> 00:05:15,660
+Alm disso, se aumentarmos Dishon com e agora podemos inserir nossa string de filtro aqui e ter uma
+
+59
+00:05:15,660 --> 00:05:18,160
+tabela de dados que funcione exatamente assim.
+

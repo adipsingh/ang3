@@ -1,0 +1,32 @@
+1
+00:00:02,370 --> 00:00:09,900
+Bem-vindo a outro mdulo nos mdulos anteriores, editamos muitos componentes de material angular e
+
+2
+00:00:09,900 --> 00:00:13,960
+adicionamos vrios layouts flexveis para posicionar tudo corretamente.
+
+3
+00:00:14,100 --> 00:00:16,790
+E usamos muitos dados fictcios.
+
+4
+00:00:16,800 --> 00:00:24,840
+Agora  hora de substitu-los por dados reais e adicionar alguns servios para que nossos componentes possam se comunicar
+
+5
+00:00:24,840 --> 00:00:32,190
+uns com os outros para que possamos iniciar exerccios reais preencher nossos componentes com dados dinmicos e
+
+6
+00:00:32,190 --> 00:00:38,340
+assim por diante e tambm daremos uma olhada em outro ngulo ou um componente material.
+
+7
+00:00:38,520 --> 00:00:43,830
+A tabela de dados, como os nomes dos gays desconsideram, definitivamente precisa de dados de entrada.
+
+8
+00:00:43,840 --> 00:00:45,550
+Ento vamos trabalhar nisso primeiro.
+

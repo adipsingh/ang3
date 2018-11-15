@@ -1,0 +1,48 @@
+1
+00:00:02,200 --> 00:00:08,230
+Antes de mergulharmos neste mdulo Aqui est uma nota importante no caso de voc estar usando o Anglo verso 6 ou
+
+2
+00:00:08,860 --> 00:00:14,130
+superior, comeando com a palavra usada por um pescador que  extremada como pior que 6 ou superior.
+
+3
+00:00:14,290 --> 00:00:18,120
+E nossos prximos anos so a biblioteca responsvel pelos observveis.
+
+4
+00:00:18,130 --> 00:00:26,890
+Agora ele geralmente funciona exatamente como antes, mas as importaes mudam agora. Na verdade, eu usei o novo ndice de importaes em
+
+5
+00:00:26,890 --> 00:00:31,960
+quase todo o curso e adicionei algumas anotaes ao longo do curso
+
+6
+00:00:31,960 --> 00:00:38,020
+em lugares onde voc pode ajust-lo, mas para ter certeza de que neste curso funciona.
+
+7
+00:00:38,020 --> 00:00:42,820
+Voc deve instalar um pacote extra com o NPM install dash dash save.
+
+8
+00:00:43,000 --> 00:00:45,730
+ o nosso extra compacto Sim.
+
+9
+00:00:45,720 --> 00:00:50,830
+Com isso, todo o cdigo deste curso funcionar sem nenhum ajuste.
+
+10
+00:00:50,830 --> 00:00:57,820
+Se voc quiser usar a verso 6 do Extreme sem esse pacote extra, como eu disse, haver
+
+11
+00:00:57,970 --> 00:01:05,000
+notaes no curso que permitem que voc atualize seu cdigo de acordo e use-o sem esse pacote extra.
+
+12
+00:01:05,020 --> 00:01:08,490
+Mas este  um timo trabalho para garantir que voc no precise fazer nada.
+

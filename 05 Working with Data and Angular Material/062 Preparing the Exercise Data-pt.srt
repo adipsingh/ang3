@@ -1,0 +1,196 @@
+1
+00:00:02,210 --> 00:00:06,020
+Ns trabalhamos em uma sindicao Vamos fechar este captulo por enquanto.
+
+2
+00:00:06,030 --> 00:00:11,440
+Vamos reabri-lo mais tarde, assim que adicionarmos um servidor e vamos trabalhar no treinamento agora.
+
+3
+00:00:11,460 --> 00:00:18,750
+Agora, na seo de treinamento, tambm devemos, naturalmente, trabalhar com dados, devemos armazenar exerccios
+
+4
+00:00:18,750 --> 00:00:24,330
+feitos pelo usurio para que possamos realiz-los nos exerccios anteriores.
+
+5
+00:00:24,360 --> 00:00:31,720
+Ento, quatro dias antes de tudo adicionar um modelo ao lado do meu componente de treinamento e eu vou nome-lo exerccio
+
+6
+00:00:31,720 --> 00:00:38,400
+no o modelo que  o nome do outono porque l eu vou definir como o exerccio deve parecer
+
+7
+00:00:38,430 --> 00:00:42,730
+e voc  claro livre para os localizadores da maneira que voc quiser.
+
+8
+00:00:42,780 --> 00:00:52,920
+Eu vou especialista uma interface chamada exerccio e exerccio no meu aplicativo deve ter um ID que 
+
+9
+00:00:52,920 --> 00:00:54,370
+do tipo string.
+
+10
+00:00:54,450 --> 00:00:59,470
+Voc poderia, claro, tambm fazer o nmero do tipo, mas eu quero ter um ID bem legvel.
+
+11
+00:00:59,520 --> 00:01:03,080
+E, em geral, tenho uma ideia de que tudo o que pode consistir em caracteres.
+
+12
+00:01:03,350 --> 00:01:09,600
+Deve ter um nome claro que entendamos algo como crunches e assim por diante, porque nem
+
+13
+00:01:09,600 --> 00:01:13,700
+todos os exerccios so igualmente longos e podem ser um nmero.
+
+14
+00:01:13,740 --> 00:01:20,450
+Digamos, em segundos, que voc decide como descobrir as calorias queimadas ao longo da
+
+15
+00:01:20,460 --> 00:01:21,480
+durao total.
+
+16
+00:01:21,480 --> 00:01:25,020
+Isso tambm poderia ser um nmero ou deveria ser um nmero provavelmente.
+
+17
+00:01:25,020 --> 00:01:32,400
+Agora tambm se voc tiver terminado ou cancelado o exerccio, ento a data em que voc iniciou a data
+
+18
+00:01:32,400 --> 00:01:37,360
+do tipo deve ser opcional, porque nem todo exerccio  metade disso.
+
+19
+00:01:37,380 --> 00:01:43,200
+Se ns configurarmos um exerccio para preencher o menu suspenso, ele no ter uma data
+
+20
+00:01:43,200 --> 00:01:52,240
+e voc poder criar um modelo separado, mas tambm podemos mistur-lo de modo legal e declarar que tudo  opcional e esse 
+
+21
+00:01:52,240 --> 00:01:58,240
+um tipo de tarefa no Texas. o que voc pode no saber, voc pode atribuir
+
+22
+00:01:58,270 --> 00:02:08,860
+um par de valores possveis como um tipo, porque eu quero ter um preenchido ou cancelado como um estado, ento eu estou aceitando duas seqncias de caracteres
+
+23
+00:02:09,060 --> 00:02:10,260
+ou agora.
+
+24
+00:02:10,690 --> 00:02:13,200
+Isso no deve ser um clon.
+
+25
+00:02:13,360 --> 00:02:22,080
+Mas este smbolo de pipe to estado enganar uma seqncia de texto completou uma seqncia de caracteres com texto.
+
+26
+00:02:22,170 --> 00:02:26,280
+Cancelado pode ser digitado corretamente embora ou.
+
+27
+00:02:26,310 --> 00:02:31,570
+Agora este  o meu exerccio Mandala que eu quero usar agora.
+
+28
+00:02:31,630 --> 00:02:38,590
+Tambm precisarei de um servio onde administramos todos os exerccios que conhecemos, bem como nossos
+
+29
+00:02:38,590 --> 00:02:40,620
+exerccios concludos e cancelados.
+
+30
+00:02:40,640 --> 00:02:46,850
+Ento, para isso, vou adicionar uma nova queda ao lado deste modelo que acabamos de criar, que nomear o
+
+31
+00:02:47,150 --> 00:02:48,150
+servio de treinamento.
+
+32
+00:02:48,320 --> 00:02:49,730
+Voc poderia, claro, tambm nome-lo.
+
+33
+00:02:49,760 --> 00:02:52,250
+O exerccio comea aqui.
+
+34
+00:02:52,250 --> 00:03:00,890
+Eu estou indo para exportar um servio de treinamento de classe onde eu quero gerenciar todos os exerccios que conhecemos, bem como todo o
+
+35
+00:03:00,890 --> 00:03:03,730
+exerccio a ser concludo e assim por diante.
+
+36
+00:03:04,190 --> 00:03:12,320
+Vou comear com uma propriedade nomeada de exerccios de lable que  do tipo exerccio, ento certifique-se de importar o
+
+37
+00:03:12,380 --> 00:03:17,420
+pai daquele modelo de queda que acabamos de criar do tipo de exerccio.
+
+38
+00:03:17,420 --> 00:03:19,440
+Air raid embora no seja um nico.
+
+39
+00:03:20,750 --> 00:03:24,920
+E aqui eu quero criar alguns exerccios com os quais comearemos.
+
+40
+00:03:24,920 --> 00:03:27,170
+Ento, quais esto disponveis em nosso aplicativo.
+
+41
+00:03:27,470 --> 00:03:33,270
+Naturalmente, voc pode criar seus prprios exerccios e encontrar isso de acordo com suas necessidades.
+
+42
+00:03:33,440 --> 00:03:42,290
+Anexado a este vdeo voc encontrar este ou estes objetos de exerccios pr-definidos com vrias duraes em segundos e
+
+43
+00:03:42,500 --> 00:03:46,550
+as calorias que voc queima durante este perodo.
+
+44
+00:03:47,930 --> 00:03:55,880
+Ento, esta  agora a primeira coisa que podemos usar em conjunto com o material angular em nosso novo componente de treinamento.
+
+45
+00:03:56,150 --> 00:03:58,010
+Ns codificamos treinamentos diferentes.
+
+46
+00:03:58,040 --> 00:04:04,950
+Ns temos o que podemos agora conectar isso  maneira que todos os exerccios do nosso servio de treinamento.
+
+47
+00:04:05,290 --> 00:04:06,550
+Aqui est seu desafio.
+
+48
+00:04:06,550 --> 00:04:09,220
+Tente isso sozinho na prxima aula.
+
+49
+00:04:09,220 --> 00:04:10,380
+Ns vamos fazer isso juntos.
+

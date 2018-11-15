@@ -1,0 +1,288 @@
+1
+00:00:02,270 --> 00:00:05,490
+Adicionamos a tabela de dados na ltima aula.
+
+2
+00:00:05,660 --> 00:00:09,560
+Agora vamos adicionar classificao hesitante e paginao a ele.
+
+3
+00:00:09,710 --> 00:00:15,650
+Vamos comear com a classificao para que possamos classificar convenientemente por durao de calorias o que quisermos para adicionar
+
+4
+00:00:16,570 --> 00:00:24,510
+classificao que precisamos para trabalhar tanto em D. H. cdigo feminino da nossa tabela de dados, bem como o cdigo de tipos.
+
+5
+00:00:24,530 --> 00:00:26,870
+Vamos comear com H. T. enviar.
+
+6
+00:00:26,900 --> 00:00:31,780
+Primeiro de tudo, temos que adicionar a diretiva de espada matemtica  tabela de matemtica.
+
+7
+00:00:32,090 --> 00:00:39,390
+Isso faz com que seja classificvel por assim dizer que no temos que definir por quais letras podemos classificar, porque por padro
+
+8
+00:00:39,420 --> 00:00:43,250
+nenhum cabealho nenhuma coluna  classificvel e isso  uma coisa boa.
+
+9
+00:00:43,260 --> 00:00:51,620
+Algumas colunas no so boas colunas de classificao, ento quais colunas ns queremos classificar, talvez a data.
+
+10
+00:00:51,810 --> 00:00:57,630
+Bem, ento ns adicionamos uma diretiva especial ao componente da clula do mat hetero e que direciona
+
+11
+00:00:57,780 --> 00:00:59,420
+o cabealho Saward do mat.
+
+12
+00:00:59,430 --> 00:01:03,020
+Na verdade, isso no  uma diretiva, mas um seletor de componentes para ser preciso.
+
+13
+00:01:03,110 --> 00:01:05,960
+Ento, adicionamos duas clulas de cabealhos correspondentes.
+
+14
+00:01:06,000 --> 00:01:10,830
+Voc adiciona esse seletor de cabealho a todas as colunas.
+
+15
+00:01:10,860 --> 00:01:19,140
+Eu quero que voc queira classificar, ento meu caso eu tambm quero classificar por nome por calorias e por durao e tambm
+
+16
+00:01:19,140 --> 00:01:19,820
+por estado.
+
+17
+00:01:19,820 --> 00:01:23,100
+Ento, para mim,  tudo colunas, mas isso no  uma obrigao.
+
+18
+00:01:23,100 --> 00:01:26,640
+Voc tambm pode usar apenas algumas das colunas.
+
+19
+00:01:26,690 --> 00:01:30,970
+Ento, com isso, adicionamos essa lgica de classificao aqui.
+
+20
+00:01:30,980 --> 00:01:39,890
+Agora s precisamos fazer algo em nosso arquivo datilografado para o componente de treinamento passado ousar que precisamos anexar alguma
+
+21
+00:01:39,920 --> 00:01:44,990
+propriedade especial da fonte de dados  nossa matemtica ou direta.
+
+22
+00:01:44,990 --> 00:01:50,170
+Se ns adicionamos no componente de modo a esta directiva voc est agora nos bastidores.
+
+23
+00:01:50,170 --> 00:01:51,930
+Muitas coisas esto acontecendo.
+
+24
+00:01:51,940 --> 00:01:58,330
+ basicamente descobrir quais cabealhos devem ser classificveis e vamos conectar tudo e ns
+
+25
+00:01:58,330 --> 00:02:02,320
+estabelecemos essa conexo, obtendo uma referncia para o nosso.
+
+26
+00:02:02,360 --> 00:02:09,640
+Matt Saward diretiva para isso, podemos usar view child, que como voc sabe, d a voc uma maneira de obter
+
+27
+00:02:09,640 --> 00:02:14,370
+acesso aos elementos para encontrar em seu modelo em seus tipos de arquivo.
+
+28
+00:02:14,380 --> 00:02:19,670
+Ento, aqui eu vou adicionar no filho visualizador e quero ter acesso ao tipo Matt.
+
+29
+00:02:19,870 --> 00:02:23,980
+Voc precisa importar isso do material angular.
+
+30
+00:02:24,010 --> 00:02:32,440
+Isto est se referindo  matemtica ou diretiva que ns adicionamos  tabela aqui agora, acessando-a com o futuro,
+
+31
+00:02:32,690 --> 00:02:35,860
+no temos acesso a toda a tabela.
+
+32
+00:02:35,860 --> 00:02:37,510
+Esta diretiva est sentada.
+
+33
+00:02:37,510 --> 00:02:45,090
+Mas realmente apenas a classificao subjacente configurou o material angular para frente para ns devido a essa combinao de matemtica
+
+34
+00:02:45,090 --> 00:02:53,010
+ou matemtica ou qualquer outra forma de dias de armazenamento subjacente configurao para coloc-lo assim so armazenados em uma propriedade de
+
+35
+00:02:53,010 --> 00:02:58,390
+classificao o nome  totalmente at voc embora qual ser do tipo tipo mapeado.
+
+36
+00:02:58,500 --> 00:03:01,620
+Ento, para digitar, estamos selecionando aqui com seu filho.
+
+37
+00:03:02,220 --> 00:03:09,330
+Agora, precisamos atribuir isso  fonte de dados, para que no possamos fazer essa ONG nela, porque estamos
+
+38
+00:03:09,330 --> 00:03:14,140
+buscando isso no modelo e o modelo no  renderizado neste momento.
+
+39
+00:03:14,280 --> 00:03:19,980
+Ento, vou usar um ciclo de vida diferente depois do init.
+
+40
+00:03:20,100 --> 00:03:24,960
+Isso precisa ser importado de um ngulo ou de um colega de trabalho.
+
+41
+00:03:25,200 --> 00:03:33,610
+Ento, vamos adicionar rapidamente a importao aqui para reviso e Annette e isso nos obriga a encerrar a oferta de outra exibio
+
+42
+00:03:33,620 --> 00:03:39,140
+no mtodo aqui que  executado uma vez que  feito renderizao e inicializao.
+
+43
+00:03:39,170 --> 00:03:43,500
+Ento aqui eu vou definir esse tipo de fonte de dados.
+
+44
+00:03:43,620 --> 00:03:48,200
+Uma propriedade cujo objeto de fonte de dados  igual a esse tipo.
+
+45
+00:03:48,200 --> 00:03:53,270
+Ento, para essa configurao, buscamos o modelo, por assim dizer, e isso  tudo.
+
+46
+00:03:53,270 --> 00:04:03,050
+Agora, se voltarmos para o aplicativo em execuo e novamente logarmos rapidamente e pararmos
+
+47
+00:04:03,050 --> 00:04:15,440
+alguns exerccios para que tenhamos algo para ver, ento veremos os exerccios e nenhum mecanismo de classificao.
+
+48
+00:04:15,460 --> 00:04:19,540
+Ns tambm no temos nenhum erro o que est errado.
+
+49
+00:04:19,570 --> 00:04:27,290
+Isso  algo que voc pode facilmente atrapalhar ou simplesmente no conhecer o componente mximo da tabela, o que inclui
+
+50
+00:04:27,310 --> 00:04:34,240
+a adio do mdulo de tabela de matemtica no mdulo de material, que no inclui ordenao e filtragem
+
+51
+00:04:34,240 --> 00:04:35,190
+de pginas.
+
+52
+00:04:35,320 --> 00:04:39,910
+Ns simplesmente temos que adicionar essas importaes separadamente e  muito enganador.
+
+53
+00:04:39,940 --> 00:04:42,630
+Ns nem sequer recebemos um aviso se no fizermos isso.
+
+54
+00:04:42,640 --> 00:04:45,640
+Ento, aqui temos que adicionar o mdulo de fonte de matemtica.
+
+55
+00:04:45,640 --> 00:04:49,900
+E como em todos os outros mdulos, temos que adicion-lo s importaes.
+
+56
+00:04:50,080 --> 00:04:54,320
+E, claro, tudo devido s exportaes para torn-lo disponvel para o Ir.
+
+57
+00:04:54,700 --> 00:05:03,480
+Agora, com isso, podemos voltar e fazer isso novamente, faa o login rapidamente com alguns dados fictcios e obtenha um
+
+58
+00:05:03,570 --> 00:05:04,660
+erro aqui.
+
+59
+00:05:06,040 --> 00:05:13,660
+A razo pela qual voc sabe o motivo  que o cabealho Matt  incorretamente adicionado ao continer de energia aqui deve ser para
+
+60
+00:05:13,660 --> 00:05:17,520
+o Mad Hatter vender um componente em todos os casos,  claro.
+
+61
+00:05:17,550 --> 00:05:20,760
+Ento esse foi um erro fraco aqui.
+
+62
+00:05:20,800 --> 00:05:25,690
+Certifique-se de no cometer este erro, mas agora voc v bem, h uma coisa que pode dar errado.
+
+63
+00:05:25,810 --> 00:05:33,050
+Mas agora, com isso corrigido, se fizermos login novamente agora, poderemos executar um monte de crunches.
+
+64
+00:05:33,070 --> 00:05:33,760
+Pare com isso.
+
+65
+00:05:33,760 --> 00:05:35,410
+Voc no precisa esperar por isso.
+
+66
+00:05:35,590 --> 00:05:39,630
+Comece com um pedao e tambm pare com isso.
+
+67
+00:05:39,630 --> 00:05:47,410
+E agora, sob exerccios anteriores, podemos realmente classificar por Callard uma durao, me desculpe por calorias por estado, que
+
+68
+00:05:47,410 --> 00:05:49,350
+ o mesmo seu nome.
+
+69
+00:05:49,510 --> 00:05:54,760
+E, claro, a data e aqui at hoje parece o mesmo, mas 10 minutos e assim por diante tambm so salvos.
+
+70
+00:05:54,760 --> 00:05:56,520
+ por isso que podemos classificar por isso.
+
+71
+00:05:56,860 --> 00:06:04,840
+Ento, o DNA est classificando o que funciona na caixa com alguns ajustes e adies na prxima palestra.
+
+72
+00:06:04,840 --> 00:06:06,340
+Vamos dar uma olhada na filtragem.
+

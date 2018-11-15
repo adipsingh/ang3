@@ -1,0 +1,148 @@
+1
+00:00:02,290 --> 00:00:08,260
+Na ltima palestra, ns injetamos nosso servio de treinamento, agora vamos nos conectar ao novo boto de incio de treinamento.
+
+2
+00:00:08,390 --> 00:00:14,630
+Agora eu imagino que o treinamento inicia o evento que eu, ento, consome em um componente de treinamento, mas
+
+3
+00:00:14,630 --> 00:00:20,100
+agora eu quero fazer tudo isso atravs de servios para a dvida no servio de treinamento.
+
+4
+00:00:20,300 --> 00:00:23,960
+Vamos antes de tudo adicionar algumas propriedades.
+
+5
+00:00:24,020 --> 00:00:29,410
+O primeiro  o exerccio de corrida que  do tipo exerccio.
+
+6
+00:00:29,570 --> 00:00:35,330
+Isso deve armazenar o exerccio que o usurio selecionou, se houver.
+
+7
+00:00:35,390 --> 00:00:43,490
+Com isso, podemos agora adicionar o mtodo de incio do exerccio, que eu quero chamar do novo componente de treinamento que no
+
+8
+00:00:43,490 --> 00:00:51,740
+seria clicado no boto de incio, um exerccio definido que o usurio escolheu para o pai passar ou todos receberem para selecionar
+
+9
+00:00:51,740 --> 00:00:54,170
+aquela ideia que deveria ser corda.
+
+10
+00:00:54,170 --> 00:01:00,650
+Vou ter que ter certeza que isso  passado do componente e ento eu vou encontrar o exerccio
+
+11
+00:01:00,640 --> 00:01:02,300
+para o usurio selecionado.
+
+12
+00:01:02,300 --> 00:01:09,800
+Assim, o exerccio selecionado que armazenar temporariamente esta constante pode ser encontrado em meus exerccios de Baleia-A
+
+13
+00:01:10,280 --> 00:01:17,870
+com a ajuda do mtodo find, onde ele executar esta funo de seta em cada elemento na
+
+14
+00:01:18,500 --> 00:01:24,680
+matriz e retornar um objeto onde eu retorno true aqui naquele funo de seta.
+
+15
+00:01:24,860 --> 00:01:29,020
+Eu quero retornar true se o ID do exerccio.
+
+16
+00:01:29,210 --> 00:01:31,650
+Ento, o exerccio est atualmente olhando.
+
+17
+00:01:31,730 --> 00:01:35,070
+Mais uma vez, ele ir analisar todos os exerccios dessa matriz.
+
+18
+00:01:35,390 --> 00:01:41,930
+Se isso  igual ao ID selecionado, porque ento eu sei que eles selecionaram o ID que corresponde ao visual que estou
+
+19
+00:01:41,930 --> 00:01:42,740
+vendo no momento.
+
+20
+00:01:42,740 --> 00:01:46,480
+Voc deve retornar true porque encontramos o tico para encontrar.
+
+21
+00:01:46,520 --> 00:01:49,930
+Ento, finalmente, isso me dar o objeto que o usurio selecionou.
+
+22
+00:01:51,190 --> 00:01:58,570
+E agora toda a loja faz em exerccio de corrida, vou guardar o meu exerccio selecionado nesta propriedade.
+
+23
+00:01:58,720 --> 00:02:00,700
+E sim, poderamos ignorar essa linha extra.
+
+24
+00:02:00,700 --> 00:02:04,770
+Poderamos tambm definir esse exerccio em execuo igual a isso.
+
+25
+00:02:04,900 --> 00:02:10,410
+Ento, este exerccio de corrida igual a tudo seria perfeitamente bem.
+
+26
+00:02:10,430 --> 00:02:15,310
+Agora, com essa configurao, estamos armazenando o usurio do exerccio selecionado no servio.
+
+27
+00:02:15,310 --> 00:02:19,470
+Isso  timo, mas apenas parte do que queramos fazer.
+
+28
+00:02:19,730 --> 00:02:26,050
+Eu ainda quero informar o componente de treinamento sobre o exerccio de seleo para que ele
+
+29
+00:02:26,150 --> 00:02:33,960
+possa ocultar o grupo maktab e mostrar o treinamento atual e o status para aquele no componente de treinamento.
+
+30
+00:02:33,980 --> 00:02:40,400
+Eu terei que me informar sobre o uso do Webroot ou escolher um novo treinamento ou no.
+
+31
+00:02:40,430 --> 00:02:46,430
+Ento, eu quero configurar essa abordagem orientada a eventos aqui, assim como fizemos para autenticao.
+
+32
+00:02:46,430 --> 00:02:50,350
+Eu acho que este  outro timo lugar para voc praticar isso.
+
+33
+00:02:50,360 --> 00:02:57,230
+Obtemos um determinado evento em que o usurio clica no boto Iniciar e voc precisa se conectar ao seu mtodo de incio de
+
+34
+00:02:57,230 --> 00:03:03,350
+exerccios aqui e ento voc tem que admitir um evento para o qual voc se inscreveu e o componente de
+
+35
+00:03:03,350 --> 00:03:05,000
+treinamento para alterar o treinamento contnuo.
+
+36
+00:03:05,030 --> 00:03:08,210
+Verdade sempre que ocorre.
+
+37
+00:03:08,210 --> 00:03:12,350
+Esse  o seu desafio na prxima palestra? Vamos fazer isso juntos.
+

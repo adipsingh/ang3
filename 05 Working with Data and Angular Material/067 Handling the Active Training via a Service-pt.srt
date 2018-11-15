@@ -1,0 +1,224 @@
+1
+00:00:02,290 --> 00:00:08,230
+Vamos nos certificar de que usamos os dados fora do treinamento desmarcado enquanto o armazenamos no servio de
+
+2
+00:00:08,770 --> 00:00:11,120
+treinamento em nosso atual componente de treinamento.
+
+3
+00:00:11,410 --> 00:00:14,270
+Por isso, selecionamos o treinamento, armazenamos e executamos o exerccio.
+
+4
+00:00:14,290 --> 00:00:15,390
+Ns fazemos este ano.
+
+5
+00:00:15,550 --> 00:00:19,940
+Na verdade, at emitimos um evento sempre que escolhemos um novo treinamento.
+
+6
+00:00:19,960 --> 00:00:24,150
+Agora precisamos usar essas informaes no componente de treinamento atual.
+
+7
+00:00:24,460 --> 00:00:30,340
+Tenha em mente que carregaremos o componente de treinamento atual sempre que iniciarmos um novo treinamento.
+
+8
+00:00:30,340 --> 00:00:32,170
+Ento, como extramos esses dados?
+
+9
+00:00:32,180 --> 00:00:36,450
+E agora eles esto no componente de treinamento atual.
+
+10
+00:00:36,540 --> 00:00:40,560
+Primeiro, quero injetar o servio de treinamento.
+
+11
+00:00:40,830 --> 00:00:50,370
+Ento, alm de injetar a coisa de dilogo mat aqui tambm injetar servio de treinamento privado do tipo servio de treinamento e que, claro, 
+
+12
+00:00:50,550 --> 00:00:56,280
+algo que todos vocs precisam adicionar aqui como um servio de treinamento de importao do
+
+13
+00:00:56,460 --> 00:00:58,250
+arquivo de servio de treinamento.
+
+14
+00:00:59,370 --> 00:01:08,160
+Uma vez que voc fez isso e ns, portanto, injetamos aqui, podemos inicializar nosso componente com o
+
+15
+00:01:08,220 --> 00:01:09,360
+treinamento selecionado.
+
+16
+00:01:09,400 --> 00:01:10,650
+Ento o que isso quer dizer.
+
+17
+00:01:11,950 --> 00:01:20,020
+Isto significa que aqui no poo central, estes passos pelos quais queremos incrementar isso, na
+
+18
+00:01:20,020 --> 00:01:24,610
+verdade voc deve depender da durao do treinamento selecionado.
+
+19
+00:01:24,620 --> 00:01:29,000
+Tambm pode fazer sentido produzir o nome do treinamento atual.
+
+20
+00:01:29,480 --> 00:01:35,720
+Ento, aqui, agora, apenas produzimos uma motivao nessa frase e o progresso do curso
+
+21
+00:01:35,870 --> 00:01:39,400
+tambm podemos colocar o nome do exerccio selecionado.
+
+22
+00:01:39,470 --> 00:01:43,860
+Ento vamos comear com os passos aqui e iniciar ou reassumir o temporizador.
+
+23
+00:01:44,030 --> 00:01:48,050
+Eu preciso de acesso ao treinamento seletivo no servio de treinamento.
+
+24
+00:01:48,110 --> 00:01:59,870
+Eu atualmente Hightower  uma propriedade privada, ento devo adicionar um Meffert para executar o exerccio onde eu retornar um novo objeto que
+
+25
+00:01:59,870 --> 00:02:08,810
+simplesmente  uma cpia deste exerccio em execuo novamente para ter certeza de que no posso mudar isso
+
+26
+00:02:08,860 --> 00:02:11,090
+de fora do servio.
+
+27
+00:02:11,180 --> 00:02:17,630
+Agora eu posso ligar para o exerccio de corrida para obter dados sobre o exerccio de corrida
+
+28
+00:02:17,690 --> 00:02:21,380
+e ele far isso no incio ou retomar o cronmetro.
+
+29
+00:02:21,380 --> 00:02:23,410
+Eu preciso calcular um passo.
+
+30
+00:02:23,750 --> 00:02:29,040
+Digamos que queremos incrementar o progresso em um e no em cinco.
+
+31
+00:02:29,060 --> 00:02:32,110
+Isso significa que precisamos de 100 etapas para chegar a 100%.
+
+32
+00:02:32,200 --> 00:02:39,080
+E isso fica claro porque o spinner de progresso do Met funciona de uma maneira que vai de 0 a 100.
+
+33
+00:02:39,080 --> 00:02:46,400
+O que podemos mudar  a rapidez com que se atualiza de uma etapa de progresso para a prxima, de modo que a etapa no
+
+34
+00:02:46,400 --> 00:02:48,020
+precisa necessariamente ser de um segundo.
+
+35
+00:02:48,320 --> 00:02:57,630
+Se nosso treinamento levar 40 segundos, um passo deve ser 100 dividido por 30 ou, na verdade, isso
+
+36
+00:02:58,200 --> 00:03:02,490
+ em milissegundos 100 dividido por 30 vezes 1000.
+
+37
+00:03:02,550 --> 00:03:11,740
+Ento, se a durao do exerccio for 30, ento ns queremos executar este processo 100 dividido por
+
+38
+00:03:12,060 --> 00:03:18,850
+30 vezes. Na verdade, isso  milissegundos, sendo 100 dividido por 30 vezes.
+
+39
+00:03:18,890 --> 00:03:30,030
+Em outras palavras, um passo pode ser dado a partir do servio de treinamento e do exerccio de corrida, acessando a
+
+40
+00:03:30,030 --> 00:03:38,580
+durao desse exerccio e dividindo-o por 100, porque 100  o nosso percentual mximo fixo, j
+
+41
+00:03:39,270 --> 00:03:42,980
+que temos vrios segundos, multiplicamos isso por 1000.
+
+42
+00:03:43,140 --> 00:03:46,200
+E agora ns recebemos o valor do passo.
+
+43
+00:03:46,470 --> 00:03:53,610
+Ento, agora eu posso usar o Stapp em vez de 1000 para ter uma durao de um spinner de
+
+44
+00:03:53,700 --> 00:03:57,880
+progresso que leva em conta a durao do exerccio. Vamos test-lo.
+
+45
+00:03:57,940 --> 00:04:02,950
+Vamos voltar para o aplicativo em execuo rapidamente efetuar login com alguns dados aleatrios.
+
+46
+00:04:03,040 --> 00:04:06,110
+Selecione o exerccio como trincheiras e clique em iniciar.
+
+47
+00:04:06,430 --> 00:04:11,250
+E agora voc v atualizaes assim.
+
+48
+00:04:11,310 --> 00:04:17,060
+Se eu clicar em parar aqui e sair e eu selecionar um exerccio diferente.
+
+49
+00:04:17,340 --> 00:04:21,610
+Agora est mais lento porque o touch escolheu qual eu selecionei o rasgo.
+
+50
+00:04:21,810 --> 00:04:27,520
+Se voc der uma olhada no servio de negociao, na verdade ter uma durao muito maior.
+
+51
+00:04:27,540 --> 00:04:30,520
+Estes so minutos gratuitos em vez de 30 segundos.
+
+52
+00:04:30,540 --> 00:04:33,250
+Ento isso est funcionando agora.
+
+53
+00:04:33,270 --> 00:04:39,780
+O que eu tambm preciso garantir  que quando ns paramos o treinamento ou quando
+
+54
+00:04:39,780 --> 00:04:47,340
+termina naturalmente que ns tambm comunicamos isso ao servio de treinamento e armazenamos o exerccio como cancelado
+
+55
+00:04:47,340 --> 00:04:48,550
+ou com sucesso.
+
+56
+00:04:48,590 --> 00:04:51,750
+Isso  algo que vamos voltar na prxima palestra.
+

@@ -1,0 +1,62 @@
+<html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>058 Code without rxjs-compat</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p>Important: This only applies if you're using Angular 6 and RxJS 6 (or higher). Check the <code>package.json</code>  file to find out which version you are using, skip this lecture if you're using an older version of Angular and RxJS.</p>
+
+<p>With <code>rxjs-compat</code>  (which you installed via <code>npm install --save rxjs-compat</code> ) you should be able to use the code exactly as shown in the last lecture.</p>
+
+
+
+
+
+
+
+
+
+<p>If you want to make it work without that package (which would have the advantage of saving some kbs on the final bundle), you'll have to do one simple adjustment:</p>
+
+
+
+
+
+
+
+
+
+<p><code>import { Subject } from 'rxjs';</code> </p>
+
+
+
+
+
+
+
+
+
+<p>instead of</p>
+
+
+
+
+
+
+
+
+
+<p><code>import { Subject } from 'rxjs/Subject';</code> </p><p>and</p><p><code>import { Subscription } from 'rxjs';</code> </p>
+
+<p>instead of</p>
+
+<p><code>import { Subscription } from 'rxjs/Subscription';</code> </p><p>And that will be the general theme for the course by the way. Directly import from <code>'rxjs'</code>  instead of <code>'rxjs/Something'</code> .<br></p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>

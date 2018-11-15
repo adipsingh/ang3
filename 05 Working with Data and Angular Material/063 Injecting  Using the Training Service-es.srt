@@ -1,0 +1,196 @@
+1
+00:00:02,250 --> 00:00:05,540
+Dnde tienes xito? Vamos a resolver esto juntos.
+
+2
+00:00:05,880 --> 00:00:12,080
+Tenemos nuestro servicio de capacitacin y para usarlo en ese nuevo componente de capacitacin que necesitamos para inyectarlo all.
+
+3
+00:00:12,090 --> 00:00:16,790
+Ahora, qu tenemos que hacer para inyectar primero el servicio?
+
+4
+00:00:17,090 --> 00:00:21,910
+Entonces deberamos ir al mdulo de la aplicacin y proporcionar el servicio all.
+
+5
+00:00:22,220 --> 00:00:25,690
+Entonces all necesitars agregar Diom o en absoluto.
+
+6
+00:00:25,730 --> 00:00:32,270
+Deje que mi ID lo haga, as que ir directamente a la matriz de proveedores y proporcionar el servicio de capacitacin.
+
+7
+00:00:32,270 --> 00:00:37,880
+Por cierto, si te ests preguntando si este mdulo est creciendo demasiado, creo que todava est bien,
+
+8
+00:00:37,940 --> 00:00:39,920
+pero por supuesto tambin podemos dividirlo.
+
+9
+00:00:39,920 --> 00:00:44,350
+Esto es algo que podemos hacer ms adelante cuando optimizamos esta aplicacin.
+
+10
+00:00:44,570 --> 00:00:51,290
+As que por ahora proporciono el servicio de capacitacin y la matriz del mdulo de aplicacin del proveedor y tambin agregamos
+
+11
+00:00:51,290 --> 00:00:57,650
+el servicio de comercio de importacin de la carpeta de capacitacin y luego el archivo de servicio de capacitacin que
+
+12
+00:00:57,650 --> 00:00:58,700
+se proporciona aqu.
+
+13
+00:00:58,820 --> 00:01:03,010
+Podemos ir al nuevo componente de capacitacin e inyectarlo all.
+
+14
+00:01:03,200 --> 00:01:07,160
+Por cierto, estoy obteniendo un error aqu y tu navegacin realmente debera arreglar esto.
+
+15
+00:01:07,160 --> 00:01:11,090
+A veces simplemente cuelga en el nuevo componente de entrenamiento.
+
+16
+00:01:11,090 --> 00:01:18,650
+Ahora quiero inyectar este servicio de capacitacin o vincularlo a una propiedad privada llamada servicio de capacitacin del tipo servicio de capacitacin,
+
+17
+00:01:19,160 --> 00:01:24,320
+este tipo es por supuesto importante para la inyeccin de dependencia angular y necesitamos importar
+
+18
+00:01:24,320 --> 00:01:29,630
+este tipo en la parte superior del archivo Certis de desentrenamiento que podemos encontrar directamente
+
+19
+00:01:29,630 --> 00:01:36,920
+en la carpeta de capacitacin el archivo que creamos hace un segundo con el que inyectar que ahora podemos acceder a
+
+20
+00:01:36,920 --> 00:01:40,780
+las capacitaciones de etiqueta y usarlas en nuestro componente de capacitacin.
+
+21
+00:01:41,030 --> 00:01:50,120
+Para esto voy a agregar un entrenamiento de propiedad que ser de tipo o tal vez ejercicios que
+
+22
+00:01:50,120 --> 00:01:51,940
+sern de tipo ejercicio.
+
+23
+00:01:52,050 --> 00:01:58,780
+Asegrese de importar este tipo 2 y, por supuesto, no solo el ejercicio, sino tambin la matriz de ejercicio.
+
+24
+00:01:58,830 --> 00:02:05,580
+Inicialmente es una matriz vaca, un motor en ella que, por supuesto, se ejecuta justo al comienzo del ciclo de
+
+25
+00:02:05,580 --> 00:02:06,980
+vida de este componente.
+
+26
+00:02:06,990 --> 00:02:15,350
+Todos los asignados a este ejercicio es a este servicio de entrenamiento ejercicios extra ponibles.
+
+27
+00:02:15,360 --> 00:02:22,560
+Ahora, una cosa que podemos mejorar es que en el servicio de capacitacin, los ejercicios disponibles son
+
+28
+00:02:22,770 --> 00:02:29,280
+pblicamente accesibles y dado que es una matriz, podemos editarlos desde cualquier lugar de la
+
+29
+00:02:29,280 --> 00:02:41,230
+aplicacin, as que tambin podemos convertir esto en una propiedad privada y agregar un mtodo auxiliar. Los tamaos de EXOR donde devolvemos este ejercicio disponible dividir el mtodo
+
+30
+00:02:41,290 --> 00:02:48,640
+de divisin crear una copia real de esa matriz por la misma razn que mencion anteriormente con
+
+31
+00:02:48,640 --> 00:02:51,740
+el tipo de referencia problemtico para los objetos.
+
+32
+00:02:51,910 --> 00:02:59,170
+Es lo mismo para las matrices y al llamar slice, creamos una nueva matriz que se puede editar sin
+
+33
+00:02:59,170 --> 00:03:00,880
+afectar a la antigua.
+
+34
+00:03:00,880 --> 00:03:07,780
+Entonces, con eso de vuelta en el entrenamiento, deberamos llegar a un ejercicio de pesas, ejecutar estos, obtener
+
+35
+00:03:07,780 --> 00:03:12,820
+una variedad de ejercicios y almacenar los objetos de pap y los ejercicios.
+
+36
+00:03:12,820 --> 00:03:20,310
+Ahora la nueva plantilla de entrenamiento de Indee podemos usar eso para crear dinmicamente nuestros componentes de opcin locas.
+
+37
+00:03:20,590 --> 00:03:27,700
+As que voy a deshacerme de todos ellos menos uno, y ese componente
+
+38
+00:03:27,700 --> 00:03:36,320
+se usar bien en conjunto con usted y all ejecutar este ciclo para todos mis ejercicios.
+
+39
+00:03:36,400 --> 00:03:45,010
+As que el ejercicio principal de ejercicios recorrer todos ellos y ahora tenemos esa variable de ejercicio local
+
+40
+00:03:45,580 --> 00:03:47,350
+que quiero usar aqu.
+
+41
+00:03:47,350 --> 00:03:57,610
+En el valor de all, asignar la ID del ejercicio y aqu deseo dar salida al nombre del ejercicio.
+
+42
+00:03:57,610 --> 00:04:01,590
+Tenga en cuenta que nuestro modelo de ejercicio tiene una identificacin y un nombre.
+
+43
+00:04:02,810 --> 00:04:10,400
+Lo que permite guardar todos estos archivos y volver a la aplicacin en ejecucin, inicie sesin rpidamente con
+
+44
+00:04:10,400 --> 00:04:12,070
+los datos que desee.
+
+45
+00:04:12,300 --> 00:04:18,370
+Y ahora puedes ver aqu obtenemos los mismos valores que antes, pero esto ahora proviene de nuestro servicio.
+
+46
+00:04:18,410 --> 00:04:19,440
+Guay.
+
+47
+00:04:19,490 --> 00:04:26,140
+El siguiente paso es llevar la informacin que seleccionamos aqu al ejercicio en ejecucin, de modo que
+
+48
+00:04:26,180 --> 00:04:31,100
+tengamos la duracin calculada sobre la duracin del ejercicio, y as sucesivamente.
+
+49
+00:04:31,100 --> 00:04:32,760
+Hagamos esto en la prxima conferencia.
+

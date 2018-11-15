@@ -1,0 +1,48 @@
+1
+00:00:02,200 --> 00:00:08,230
+Antes de sumergirnos en este mdulo Aqu hay una nota importante en caso de que est usando la versin 6 de Anglo
+
+2
+00:00:08,860 --> 00:00:14,130
+o superior, comenzando con la palabra que usa un pescador que es extrema y peor que 6 o ms.
+
+3
+00:00:14,290 --> 00:00:18,120
+Y nuestros prximos aos es la biblioteca responsable de los observables.
+
+4
+00:00:18,130 --> 00:00:26,890
+Ahora generalmente funciona exactamente como antes, pero las importaciones cambian ahora, de hecho, utilic el nuevo ndice de importaciones en casi todas partes del
+
+5
+00:00:26,890 --> 00:00:31,960
+curso y agregu algunas anotaciones a lo largo del curso en lugares donde puede
+
+6
+00:00:31,960 --> 00:00:38,020
+ajustarlo, pero para asegurarse de que el mismo cdigo exacto que se muestra en este curso funciona.
+
+7
+00:00:38,020 --> 00:00:42,820
+Debe instalar un paquete adicional con NPM install dash dash save.
+
+8
+00:00:43,000 --> 00:00:45,730
+Es nuestro compacta extra de Yes dash.
+
+9
+00:00:45,720 --> 00:00:50,830
+Con eso, todo el cdigo en este curso funcionar sin ningn ajuste.
+
+10
+00:00:50,830 --> 00:00:57,820
+Si desea utilizar la versin 6 de nuestro Extreme sin ese paquete adicional, como ya he dicho, habr
+
+11
+00:00:57,970 --> 00:01:05,000
+anotaciones en el curso que le permitirn actualizar su cdigo en consecuencia y usarlo sin ese paquete adicional.
+
+12
+00:01:05,020 --> 00:01:08,490
+Pero este es un buen trabajo para asegurarse de que no tenga que hacer nada.
+

@@ -1,0 +1,148 @@
+1
+00:00:02,290 --> 00:00:08,260
+En la ltima conferencia, inyectamos nuestro servicio de capacitacin, ahora estamos conectados al nuevo botn de inicio de entrenamiento.
+
+2
+00:00:08,390 --> 00:00:14,630
+En este momento, la imagen tiene un evento de inicio de capacitacin que luego consumo en un componente de capacitacin, pero
+
+3
+00:00:14,630 --> 00:00:20,100
+ahora quiero hacer todo eso a travs de los servicios de la deuda en el servicio de capacitacin.
+
+4
+00:00:20,300 --> 00:00:23,960
+Primero agreguemos un par de propiedades.
+
+5
+00:00:24,020 --> 00:00:29,410
+El primero es el ejercicio de correr que es de tipo ejercicio.
+
+6
+00:00:29,570 --> 00:00:35,330
+Esto debera almacenar el ejercicio que el usuario seleccion si lo hubiera.
+
+7
+00:00:35,390 --> 00:00:43,490
+Con eso ahora podemos agregar el mtodo de inicio de ejercicios aqu al cual quiero llamar desde el nuevo componente de entrenamiento. No se
+
+8
+00:00:43,490 --> 00:00:51,740
+hara clic en el botn de inicio; se trataba de un ejercicio establecido que el usuario eligi para todos los pases o todos recibidos para
+
+9
+00:00:51,740 --> 00:00:54,170
+seleccionar esa idea que debera ser cuerda.
+
+10
+00:00:54,170 --> 00:01:00,650
+Tendr que asegurarme de que esto se pase del componente y luego encontrar el ejercicio
+
+11
+00:01:00,640 --> 00:01:02,300
+seleccionado por el usuario.
+
+12
+00:01:02,300 --> 00:01:09,800
+As que el ejercicio seleccionado que almacenar temporalmente esta constante se puede encontrar en mis ejercicios A-Whale
+
+13
+00:01:10,280 --> 00:01:17,870
+con la ayuda del mtodo find donde ejecutar esta funcin de flecha en cada elemento de la
+
+14
+00:01:18,500 --> 00:01:24,680
+matriz y devolver un objeto donde yo devuelvo verdadero aqu en ese funcin de flecha.
+
+15
+00:01:24,860 --> 00:01:29,020
+Quiero volver verdadero si la ID del ejercicio.
+
+16
+00:01:29,210 --> 00:01:31,650
+As que el ejercicio actualmente est mirando.
+
+17
+00:01:31,730 --> 00:01:35,070
+De nuevo, observar todos los ejercicios en ese conjunto.
+
+18
+00:01:35,390 --> 00:01:41,930
+Si eso es igual a la ID seleccionada porque entonces s que la identificacin seleccionada coincide con la ptica que
+
+19
+00:01:41,930 --> 00:01:42,740
+estoy viendo actualmente.
+
+20
+00:01:42,740 --> 00:01:46,480
+Debera devolver verdadero porque encontramos el ptico para encontrar.
+
+21
+00:01:46,520 --> 00:01:49,930
+Entonces, en ltima instancia, esto me dar el objeto que el usuario seleccion.
+
+22
+00:01:51,190 --> 00:01:58,570
+Y ahora todas las tiendas lo hacen en ejercicio. Guardar mi ejercicio seleccionado en esta propiedad.
+
+23
+00:01:58,720 --> 00:02:00,700
+Y s, podramos omitir esta lnea adicional.
+
+24
+00:02:00,700 --> 00:02:04,770
+Tambin podramos simplemente establecer este ejercicio de correr igual a eso.
+
+25
+00:02:04,900 --> 00:02:10,410
+Entonces este ejercicio de correr igual a eso estara perfectamente bien.
+
+26
+00:02:10,430 --> 00:02:15,310
+Ahora con esa configuracin estamos almacenando el usuario de ejercicio seleccionado en el servicio.
+
+27
+00:02:15,310 --> 00:02:19,470
+Eso es genial, pero solo parte de lo que queramos hacer.
+
+28
+00:02:19,730 --> 00:02:26,050
+Todava deseo informar el componente de capacitacin sobre el ejercicio seleccionado para que pueda
+
+29
+00:02:26,150 --> 00:02:33,960
+ocultar el grupo maktab y mostrar la capacitacin y las estadsticas actuales en el componente de capacitacin.
+
+30
+00:02:33,980 --> 00:02:40,400
+Tendr que informarme sobre el uso de Webroot o elegir entrenamientos nuevos o no.
+
+31
+00:02:40,430 --> 00:02:46,430
+As que quiero configurar este enfoque orientado a eventos tambin, as como lo hicimos para la autenticacin.
+
+32
+00:02:46,430 --> 00:02:50,350
+Supongo que este es otro gran lugar para practicar esto.
+
+33
+00:02:50,360 --> 00:02:57,230
+Obtenemos un cierto evento en el que el usuario hace clic en el botn de inicio que debe conectarse a su mtodo de
+
+34
+00:02:57,230 --> 00:03:03,350
+inicio de ejercicio aqu y luego debe admitir un evento al que se suscribe y el componente de capacitacin para
+
+35
+00:03:03,350 --> 00:03:05,000
+cambiar la capacitacin en curso.
+
+36
+00:03:05,030 --> 00:03:08,210
+Verdadero siempre que ocurra.
+
+37
+00:03:08,210 --> 00:03:12,350
+Este es tu desafo en la prxima conferencia lo haremos juntos?
+

@@ -1,0 +1,32 @@
+1
+00:00:02,370 --> 00:00:09,900
+Bienvenido a otro mdulo en los mdulos anteriores editamos una gran cantidad de componentes de materiales angulares y agregamos una
+
+2
+00:00:09,900 --> 00:00:13,960
+gran cantidad de diseo flexible de estilo para colocar todo correctamente.
+
+3
+00:00:14,100 --> 00:00:16,790
+Y usamos muchos datos ficticios.
+
+4
+00:00:16,800 --> 00:00:24,840
+Ahora es el momento de reemplazarlos con datos reales y agregar algunos servicios para que nuestros componentes se
+
+5
+00:00:24,840 --> 00:00:32,190
+puedan comunicar entre s de esa manera podemos comenzar ejercicios reales que llenen nuestros componentes con
+
+6
+00:00:32,190 --> 00:00:38,340
+datos dinmicos, y as sucesivamente, y tambin veremos otro ngulo o un componente material.
+
+7
+00:00:38,520 --> 00:00:43,830
+La tabla de datos como los nombres de gests se descomponen definitivamente necesita datos de entrada.
+
+8
+00:00:43,840 --> 00:00:45,550
+As que trabajemos en esto primero.
+

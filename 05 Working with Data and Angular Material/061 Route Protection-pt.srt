@@ -1,0 +1,304 @@
+1
+00:00:02,310 --> 00:00:07,900
+Hora de adicionar alguma proteo com isso, quero dizer que no podemos alcanar a rota de treinamento
+
+2
+00:00:07,920 --> 00:00:09,380
+se no formos afetados basicamente.
+
+3
+00:00:09,540 --> 00:00:12,040
+E para isso podemos usar um guarda de rota.
+
+4
+00:00:12,360 --> 00:00:18,310
+Agora eu vou para a pasta off e adicionar ces de guarda.
+
+5
+00:00:18,330 --> 00:00:28,000
+TS agora exporta um Claassen aqui que todos nomeados de surpresa e isso realmente ser uma classe normal
+
+6
+00:00:28,000 --> 00:00:29,060
+de datilografia.
+
+7
+00:00:29,450 --> 00:00:37,430
+Ele implementar uma determinada interface atravs de uma interface que precisa ser importada no
+
+8
+00:00:37,460 --> 00:00:38,460
+roteador angular.
+
+9
+00:00:38,840 --> 00:00:40,800
+Agora qual interface  essa.
+
+10
+00:00:40,820 --> 00:00:44,300
+ a interface de ativao da lata.
+
+11
+00:00:44,360 --> 00:00:50,810
+Assim, para este colossal Abdy implementa palavra-chave e, em seguida, implementar que pode ativar a interface.
+
+12
+00:00:51,140 --> 00:00:56,760
+E isso agora me obriga a adicionar um mtodo de ativao de lata neste mtodo.
+
+13
+00:00:56,930 --> 00:00:59,870
+Na verdade, temos alguns argumentos diferentes.
+
+14
+00:00:59,960 --> 00:01:10,830
+O primeiro argumento  a rota que estamos tentando ativ-lo do instantneo de rota ativado que voc realmente
+
+15
+00:01:10,850 --> 00:01:13,770
+importa do pacote do roteador.
+
+16
+00:01:13,880 --> 00:01:16,820
+Assim, o mesmo que usamos para importar pode
+
+17
+00:01:19,650 --> 00:01:27,010
+ativar o segundo argumento que recebemos aqui  o estado de roteamento atual do tipo de imagem do estado do roteador.
+
+18
+00:01:27,180 --> 00:01:33,470
+E isso tambm importa isso do pacote do roteador angular e no de qualquer outro pacote.
+
+19
+00:01:34,550 --> 00:01:42,380
+Ento, este mtodo ser executado por angular nos EUA desprevenidos sempre que nos depararmos com ele e eu mostrarei
+
+20
+00:01:42,380 --> 00:01:49,940
+como o anexamos  nossa rota e um segundo a falta de guarda no  completa, embora precise
+
+21
+00:01:49,940 --> 00:01:56,820
+retornar true ou uma promessa que resolva para true ou um observvel que resolva para true.
+
+22
+00:01:57,140 --> 00:02:02,100
+Ento aqui vou voltar a verdade por enquanto.
+
+23
+00:02:02,110 --> 00:02:05,490
+Agora isso seria correto e sempre nos daria acesso.
+
+24
+00:02:05,540 --> 00:02:09,000
+Agora, em vez de claro, quero verificar se o usurio est ofendido.
+
+25
+00:02:09,290 --> 00:02:17,120
+Ento, no d decorator injetvel aqui que precisa ser importado no CT angular e eu adiciono isso para eles podem
+
+26
+00:02:20,030 --> 00:02:26,570
+injetar o ano de servio fora porque o servio off  a parte onde descobrimos onde
+
+27
+00:02:26,570 --> 00:02:29,680
+o usurio est ofendendo obt-lo ou no .
+
+28
+00:02:30,050 --> 00:02:39,260
+Ento eu vou injetar o servio off e para isso voc precisa garantir que voc importe o seu servio off.
+
+29
+00:02:39,470 --> 00:02:44,710
+Agora com o policial que tem ele ou que podemos atribuir este hype aqui e injet-lo.
+
+30
+00:02:45,020 --> 00:02:52,130
+E agora voc est em pode ativar na verdade no  verdade, mas chegar a ser de servio e
+
+31
+00:02:52,130 --> 00:03:00,770
+retornou ou tipo de meu mtodo off temos l agora est fora Meffert se voc se lembra  este mtodo aqui que registra
+
+32
+00:03:01,160 --> 00:03:03,320
+quem usurio est definido ou no.
+
+33
+00:03:03,320 --> 00:03:06,410
+E no ser dito se o usurio no for afetado.
+
+34
+00:03:06,410 --> 00:03:12,110
+Ento, aqui s retornamos true e, portanto, concedemos acesso  rota que queramos carregar.
+
+35
+00:03:12,260 --> 00:03:20,270
+Se  verdade agora, na verdade, retornando apenas o que no  suficiente, temos que fazer alguma coisa, se no  verdade,
+
+36
+00:03:20,330 --> 00:03:24,570
+porque o nosso roteamento sbio no ser permitido usar ficamos presos.
+
+37
+00:03:24,980 --> 00:03:29,180
+Ento vou checar se dys retorna verdadeiro.
+
+38
+00:03:31,330 --> 00:03:33,820
+E se este for o caso.
+
+39
+00:03:33,820 --> 00:03:44,530
+Ento, se ns fizermos essa verificao aqui, eu retornarei verdadeiro caso contrrio, se isso falhar, eu quero redirecionar o
+
+40
+00:03:44,530 --> 00:03:45,270
+usurio.
+
+41
+00:03:45,460 --> 00:03:50,030
+Ento eu vou injetar o roteador angular aqui.
+
+42
+00:03:51,170 --> 00:04:02,390
+Que eu tambm importo do pacote do roteador angular e com isso injetado aqui vou chamar esse roteador e agora navegar
+
+43
+00:04:03,060 --> 00:04:10,130
+para barra de log que  para onde eu quero redirecionar o usurio.
+
+44
+00:04:10,230 --> 00:04:15,610
+Se ele tentar acessar o roteador no estava sendo autenticado com isso a guarda configurou.
+
+45
+00:04:15,600 --> 00:04:18,440
+A questo  como ns a usamos.
+
+46
+00:04:19,270 --> 00:04:23,220
+E a resposta  anex-lo a uma rota em nossa configurao de roteamento.
+
+47
+00:04:23,290 --> 00:04:30,640
+Portanto, no mdulo de roteamento de aplicativos, obtemos nossa rota de treinamento que deve ser protegida
+
+48
+00:04:30,640 --> 00:04:38,110
+e podemos proteg-la adicionando uma nova propriedade  configurao de rota que pode ser ativada e
+
+49
+00:04:38,110 --> 00:04:46,870
+essa  uma matriz de classes que tem que implementar interface porque o angular executar o mtodo de ativao
+
+50
+00:04:46,900 --> 00:04:52,000
+da lata que a interface nos obriga a implementar para ns.
+
+51
+00:04:52,000 --> 00:04:58,140
+Ento este mtodo ser executado por angular e por um ou dois executados.
+
+52
+00:04:58,210 --> 00:05:05,260
+Bem, temos que adicionar nosso Kinect com protetor para diskette array do atuador para esta rota onde
+
+53
+00:05:05,260 --> 00:05:06,040
+queremos us-lo.
+
+54
+00:05:06,400 --> 00:05:15,310
+Ento, aqui eu vou adicionar a minha guarda despropositada e precisamos adicionar uma ou duas polegadas de guarda fora do arquivo
+
+55
+00:05:15,310 --> 00:05:17,680
+de guarda na pasta off.
+
+56
+00:05:17,680 --> 00:05:20,680
+E com isso essa rota est agora protegida.
+
+57
+00:05:20,680 --> 00:05:26,690
+Agora h uma pequena coisa que falta, no  bvio, mas os desprevenidos.
+
+58
+00:05:26,690 --> 00:05:31,740
+Nos bastidores  tratado como um servio que  injetado por angular.
+
+59
+00:05:31,760 --> 00:05:37,910
+Mesmo que ns no injetemos espanadores para ns e por dias para trabalhar ns precisamos prover isto.
+
+60
+00:05:37,910 --> 00:05:44,750
+Agora, normalmente, forneceramos um mdulo profundo, mas aqui podemos fornecer o mdulo de roteamento de aplicativos, porque
+
+61
+00:05:44,750 --> 00:05:48,170
+ele ainda ser realmente disponibilizado para o aplicativo inteiro.
+
+62
+00:05:48,350 --> 00:05:54,170
+Mas ns s o usamos aqui na seo de roteamento e podemos deixar isso bem claro adicionando
+
+63
+00:05:54,860 --> 00:05:55,560
+provedores aqui.
+
+64
+00:05:55,670 --> 00:05:58,370
+Ento provedores de guarda.
+
+65
+00:05:58,670 --> 00:06:00,160
+E esta  uma exceo rara.
+
+66
+00:06:00,260 --> 00:06:07,370
+Voc normalmente deve fornecer no mdulo do aplicativo ou diretamente em um componente, mas as protees podem ser fornecidas
+
+67
+00:06:07,370 --> 00:06:09,050
+no mdulo de roteamento.
+
+68
+00:06:09,050 --> 00:06:20,290
+Agora, com isso, podemos ir ao nosso aplicativo e, se eu tentar acessar o treinamento de barra, voc ser redirecionado
+
+69
+00:06:20,290 --> 00:06:27,170
+para o log da barra se eu fizer o login com sucesso.
+
+70
+00:06:28,280 --> 00:06:30,030
+E eu no vou treinar.
+
+71
+00:06:30,230 --> 00:06:31,990
+Eu tenho permisso para acessar isso.
+
+72
+00:06:32,000 --> 00:06:33,820
+Eu no sou redirecionado aqui.
+
+73
+00:06:34,160 --> 00:06:37,280
+Ento, essa  a proteo de rota que est sendo adicionada.
+
+74
+00:06:37,280 --> 00:06:45,320
+Isso foi muito trabalho em educao e assim por diante e Portland, mas eu prometi tambm trabalhar em dados de
+
+75
+00:06:45,320 --> 00:06:49,830
+treinamento e adicionar componentes de material angular que dependem de dados.
+
+76
+00:06:49,970 --> 00:06:52,180
+Bem, vamos trabalhar nisso a seguir.
+

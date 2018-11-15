@@ -1,0 +1,196 @@
+1
+00:00:02,210 --> 00:00:06,020
+Trabajamos en una sindicacin. Cerremos este captulo por el momento.
+
+2
+00:00:06,030 --> 00:00:11,440
+Volveremos a abrirlo ms tarde una vez que agreguemos un servidor y trabajemos en el entrenamiento ahora.
+
+3
+00:00:11,460 --> 00:00:18,750
+Ahora, en la seccin de capacitacin, tambin debemos trabajar con los datos, debemos almacenar los
+
+4
+00:00:18,750 --> 00:00:24,330
+ejercicios realizados por el usuario para que podamos generarlos en ejercicios anteriores.
+
+5
+00:00:24,360 --> 00:00:31,720
+As que cuatro das antes que nada agregue un modelo al lado de mi componente de capacitacin y lo nombrar ejercicio,
+
+6
+00:00:31,720 --> 00:00:38,400
+no el modelo que es el nombre de Otoo porque all voy a definir cmo debera ser el ejercicio
+
+7
+00:00:38,430 --> 00:00:42,730
+y, por supuesto, est libre a los buscadores en la forma que desee.
+
+8
+00:00:42,780 --> 00:00:52,920
+Voy a experto una interfaz llamada ejercicio y ejercicio en mi aplicacin debe tener una identificacin que es
+
+9
+00:00:52,920 --> 00:00:54,370
+de tipo cadena.
+
+10
+00:00:54,450 --> 00:00:59,470
+Por supuesto, tambin puede hacer que sea de tipo nmero, pero quiero tener una ID fcil de leer.
+
+11
+00:00:59,520 --> 00:01:03,080
+Y en general, tengo una idea de que todo lo que puede consistir en personajes.
+
+12
+00:01:03,350 --> 00:01:09,600
+Debe tener un nombre, por supuesto, que entendemos algo as como abdominales, etc., porque no todos
+
+13
+00:01:09,600 --> 00:01:13,700
+los ejercicios duran tanto tiempo y pueden ser un nmero.
+
+14
+00:01:13,740 --> 00:01:20,450
+Digamos en segundos que depende de usted cmo descubrir las caloras quemadas si lo hace durante
+
+15
+00:01:20,460 --> 00:01:21,480
+toda la duracin.
+
+16
+00:01:21,480 --> 00:01:25,020
+Eso tambin podra ser un nmero o debera ser probablemente un nmero.
+
+17
+00:01:25,020 --> 00:01:32,400
+Ahora bien, si finalizaste o cancelaste el ejercicio, una fecha, bsicamente, la fecha en que lo comenzaste con fecha de
+
+18
+00:01:32,400 --> 00:01:37,360
+tipo debera ser opcional, porque no todo el ejercicio es la mitad de eso.
+
+19
+00:01:37,380 --> 00:01:43,200
+Si configuramos un ejercicio para rellenar nuestro men desplegable, no va a tener una
+
+20
+00:01:43,200 --> 00:01:52,240
+fecha y podra crear un modelo por separado, pero tambin podemos mezclarlo realmente bien y un estado para indicar que todo
+
+21
+00:01:52,240 --> 00:01:58,240
+es opcional y este es realmente un tipo de asignaciones en Texas que quizs
+
+22
+00:01:58,270 --> 00:02:08,860
+no sepa, puede asignar un par de valores posibles como tipo porque quiero tener un estado completado o cancelado como estado, entonces estoy aceptando dos
+
+23
+00:02:09,060 --> 00:02:10,260
+cadenas o ahora.
+
+24
+00:02:10,690 --> 00:02:13,200
+Esto no debera ser un coln.
+
+25
+00:02:13,360 --> 00:02:22,080
+Pero este smbolo de la tubera as que el estado engaa a una secuencia de texto completado una cadena con texto.
+
+26
+00:02:22,170 --> 00:02:26,280
+Cancelado puede escribirse correctamente o.
+
+27
+00:02:26,310 --> 00:02:31,570
+Ahora este es mi ejercicio Mandala que quiero usar ahora.
+
+28
+00:02:31,630 --> 00:02:38,590
+Tambin necesitar un servicio donde gestionemos todos los ejercicios que conocemos, as como nuestros
+
+29
+00:02:38,590 --> 00:02:40,620
+ejercicios completados y cancelados.
+
+30
+00:02:40,640 --> 00:02:46,850
+As que para eso voy a agregar una nueva cada al lado de este modelo que acabamos de crear que nombrar el
+
+31
+00:02:47,150 --> 00:02:48,150
+servicio de capacitacin.
+
+32
+00:02:48,320 --> 00:02:49,730
+Por supuesto, tambin puedes nombrarlo.
+
+33
+00:02:49,760 --> 00:02:52,250
+El ejercicio comienza aqu.
+
+34
+00:02:52,250 --> 00:03:00,890
+Voy a exportar un servicio de capacitacin en clase donde quiero administrar todos los ejercicios que conocemos, as como todo el
+
+35
+00:03:00,890 --> 00:03:03,730
+ejercicio que se completar, y as sucesivamente.
+
+36
+00:03:04,190 --> 00:03:12,320
+Comenzar con una propiedad denominada "ejercicios de lable fuera de lnea", que es de tipo ejercicio, as que asegrese de importar
+
+37
+00:03:12,380 --> 00:03:17,420
+pap de ese modelo de otoo que acabamos de crear de tipo ejercicio.
+
+38
+00:03:17,420 --> 00:03:19,440
+Ataque areo aunque no uno solo.
+
+39
+00:03:20,750 --> 00:03:24,920
+Y aqu quiero crear un par de ejercicios con los que comenzaremos.
+
+40
+00:03:24,920 --> 00:03:27,170
+Entonces, cules estn disponibles en nuestra aplicacin.
+
+41
+00:03:27,470 --> 00:03:33,270
+Por supuesto, puede crear sus propios ejercicios y encontrar esto a su medida.
+
+42
+00:03:33,440 --> 00:03:42,290
+Adjunto a este video encontrar este aire o estos objetos de ejercicios predefinidos con varias duraciones en segundos
+
+43
+00:03:42,500 --> 00:03:46,550
+y las caloras que quema durante esta duracin.
+
+44
+00:03:47,930 --> 00:03:55,880
+Entonces, esto es lo primero que podemos usar junto con el material angular en nuestro nuevo componente de entrenamiento.
+
+45
+00:03:56,150 --> 00:03:58,010
+Codificamos un entrenamiento diferente.
+
+46
+00:03:58,040 --> 00:04:04,950
+Tenemos lo que ahora podemos conectar con la forma en que todos los ejercicios de nuestro servicio de capacitacin.
+
+47
+00:04:05,290 --> 00:04:06,550
+Aqu est tu desafo.
+
+48
+00:04:06,550 --> 00:04:09,220
+Pruebe esto por su cuenta en la prxima conferencia.
+
+49
+00:04:09,220 --> 00:04:10,380
+Lo haremos juntos.
+

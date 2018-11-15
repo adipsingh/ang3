@@ -1,0 +1,196 @@
+1
+00:00:02,250 --> 00:00:05,540
+Onde voc est bem? Vamos resolver isso juntos.
+
+2
+00:00:05,880 --> 00:00:12,080
+Temos o nosso servio de treinamento e para us-lo nesse novo componente de treinamento, precisamos injetar isso l.
+
+3
+00:00:12,090 --> 00:00:16,790
+Agora, o que precisamos fazer para injetar o servio fornecido primeiro.
+
+4
+00:00:17,090 --> 00:00:21,910
+Portanto, devemos ir ao mdulo do aplicativo e fornecer o servio l.
+
+5
+00:00:22,220 --> 00:00:25,690
+Ento, voc precisar adicionar Diom ou nada.
+
+6
+00:00:25,730 --> 00:00:32,270
+Deixe o meu ID fazer isso, ento vou diretamente para a matriz de provedores e forneo o servio de treinamento.
+
+7
+00:00:32,270 --> 00:00:37,880
+A propsito, se voc est se perguntando se este mdulo est crescendo um pouco demais, acho que ainda est bem,
+
+8
+00:00:37,940 --> 00:00:39,920
+mas  claro que tambm podemos dividi-lo.
+
+9
+00:00:39,920 --> 00:00:44,350
+Isso  algo que podemos fazer em um momento posterior quando otimizarmos este aplicativo.
+
+10
+00:00:44,570 --> 00:00:51,290
+Ento, por enquanto eu forneo o servio de treinamento e a matriz do aplicativo do mdulo do aplicativo e tambm adicionamos
+
+11
+00:00:51,290 --> 00:00:57,650
+o servio de importao de negociao da pasta de treinamento e, em seguida, o arquivo de servio de treinamento fornecido
+
+12
+00:00:57,650 --> 00:00:58,700
+com o fornecido aqui.
+
+13
+00:00:58,820 --> 00:01:03,010
+Podemos ir para o novo componente de treinamento e injetar isso l.
+
+14
+00:01:03,200 --> 00:01:07,160
+A propsito, estou recebendo um erro aqui e voc deve realmente corrigir isso.
+
+15
+00:01:07,160 --> 00:01:11,090
+s vezes, apenas desliga no novo componente de treinamento.
+
+16
+00:01:11,090 --> 00:01:18,650
+Agora eu quero injetar este servio de treinamento ou vincul-lo a uma propriedade privada chamada servio de treinamento do tipo treinamento de
+
+17
+00:01:19,160 --> 00:01:24,320
+treinamento. Esse tipo  obviamente importante para angular como injeo de dependncia e precisamos importar
+
+18
+00:01:24,320 --> 00:01:29,630
+esse tipo na parte superior do arquivo de Certis de ponto que ns Voc pode
+
+19
+00:01:29,630 --> 00:01:36,920
+encontrar diretamente na pasta de treinamento o arquivo que criamos h um segundo atrs com essa injeo, que agora podemos acessar
+
+20
+00:01:36,920 --> 00:01:40,780
+os treinamentos de rtulos ausentes e us-los em nosso componente de treinamento.
+
+21
+00:01:41,030 --> 00:01:50,120
+Para isso eu vou adicionar um treinamento de propriedade que ser do tipo ou talvez exerccios que
+
+22
+00:01:50,120 --> 00:01:51,940
+sero do tipo exerccio.
+
+23
+00:01:52,050 --> 00:01:58,780
+Certifique-se de importar este tipo 2 e, claro, no apenas o exerccio, mas tambm o conjunto de exerccios.
+
+24
+00:01:58,830 --> 00:02:05,580
+Inicialmente,  um array vazio que contm um mecanismo que, obviamente,  executado logo no incio do ciclo
+
+25
+00:02:05,580 --> 00:02:06,980
+de vida desse componente.
+
+26
+00:02:06,990 --> 00:02:15,350
+Todos atribudos este exerccio  a este treinamento exerccios extras wearable.
+
+27
+00:02:15,360 --> 00:02:22,560
+Agora, uma coisa que podemos melhorar  que no servio de treinamento os exerccios disponveis
+
+28
+00:02:22,770 --> 00:02:29,280
+so publicamente acessveis e, como  um array, podemos edit-lo em qualquer lugar
+
+29
+00:02:29,280 --> 00:02:41,230
+do aplicativo para que possamos transform-lo em uma propriedade privada e adicionar um mtodo auxiliar. Tamanhos EXOR, onde retornamos os exerccios disponveis, o mtodo
+
+30
+00:02:41,290 --> 00:02:48,640
+slice criar uma cpia real desse array pelo mesmo motivo que mencionei anteriormente com o
+
+31
+00:02:48,640 --> 00:02:51,740
+tipo de referncia problemtico para objetos.
+
+32
+00:02:51,910 --> 00:02:59,170
+ o mesmo para arrays e chamando slice ns criamos um novo array que pode ser editado
+
+33
+00:02:59,170 --> 00:03:00,880
+sem afetar o antigo.
+
+34
+00:03:00,880 --> 00:03:07,780
+Ento, com isso de volta ao treinamento, deveramos, na verdade, estender a mo para fazer um exerccio de
+
+35
+00:03:07,780 --> 00:03:12,820
+peso e executar esses exerccios e armazenar o pai e a propriedade dos exerccios.
+
+36
+00:03:12,820 --> 00:03:20,310
+Agora, o novo modelo de treinamento Indee pode ser usado para criar dinamicamente nossos componentes de opo malucos.
+
+37
+00:03:20,590 --> 00:03:27,700
+Ento, eu vou me livrar de todos eles, mas um e aquele componente ser bem
+
+38
+00:03:27,700 --> 00:03:36,320
+usado em conjunto com voc e para l eu vou executar este loop para todos os meus exerccios.
+
+39
+00:03:36,400 --> 00:03:45,010
+Ento, o exerccio de exerccios de chumbo ir percorrer todos eles e agora temos a varivel de exerccio local que
+
+40
+00:03:45,580 --> 00:03:47,350
+eu quero usar aqui.
+
+41
+00:03:47,350 --> 00:03:57,610
+No valor l eu atribuirei ID de exerccio e aqui eu quero o nome do exerccio de sada.
+
+42
+00:03:57,610 --> 00:04:01,590
+Tenha em mente que nosso modelo de exerccio tem um ID e um nome.
+
+43
+00:04:02,810 --> 00:04:10,400
+O que permite salvar todos esses arquivos e voltar para o aplicativo em execuo, vamos fazer login rapidamente
+
+44
+00:04:10,400 --> 00:04:12,070
+com os dados desejados.
+
+45
+00:04:12,300 --> 00:04:18,370
+E agora voc pode ver aqui que obtemos os mesmos valores de antes, mas isso agora vem do nosso servio.
+
+46
+00:04:18,410 --> 00:04:19,440
+Legal.
+
+47
+00:04:19,490 --> 00:04:26,140
+O prximo passo  levar as informaes que selecionamos para o exerccio em andamento, de modo que
+
+48
+00:04:26,180 --> 00:04:31,100
+tenhamos a durao calculada sobre a durao do exerccio e assim por diante.
+
+49
+00:04:31,100 --> 00:04:32,760
+Vamos fazer isso na prxima aula.
+

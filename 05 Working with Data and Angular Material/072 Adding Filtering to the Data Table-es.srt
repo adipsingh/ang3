@@ -1,0 +1,236 @@
+1
+00:00:02,350 --> 00:00:10,020
+Agreguemos algo de filtrado a nuestro filtro de tabla matemtica que es sorprendentemente simple.
+
+2
+00:00:10,030 --> 00:00:16,010
+En primer lugar, necesitamos agregar la entrada en la que el usuario puede escribir y est por encima de las tablas de matemticas, por lo que
+
+3
+00:00:16,010 --> 00:00:17,090
+no est dentro de ella.
+
+4
+00:00:17,290 --> 00:00:18,760
+No est estrictamente conectado a eso.
+
+5
+00:00:18,760 --> 00:00:19,920
+Es una entrada neuronal.
+
+6
+00:00:19,990 --> 00:00:23,030
+Del mismo modo que podra agregarlo en cualquier otro lugar de su pgina.
+
+7
+00:00:23,140 --> 00:00:29,100
+Entonces, todos estn en el mapa para tener una apariencia agradable con una etiqueta flotante, etc.
+
+8
+00:00:29,260 --> 00:00:33,780
+Y luego hay y ninguna entrada real con la entrada de matemticas como una directiva.
+
+9
+00:00:34,030 --> 00:00:38,920
+Y eso es casi que tambin establece un tiempo para enviar mensajes de texto.
+
+10
+00:00:38,920 --> 00:00:41,130
+Entonces este es ahora mi campo de entrada completo.
+
+11
+00:00:41,150 --> 00:00:44,620
+Quiero usar ahora en ese campo de entrada.
+
+12
+00:00:44,860 --> 00:00:48,700
+Quiero registrar un detector de eventos que se activa cada vez que escribimos.
+
+13
+00:00:49,000 --> 00:00:51,650
+As que agregar un oyente de clave.
+
+14
+00:00:52,180 --> 00:01:00,820
+Y aqu voy a ejecutar para filtrar Meffert donde quiero reenviar el valor a usuario ingresado. Puedo acceder a esto en el signo
+
+15
+00:01:00,820 --> 00:01:06,520
+de dlar, incluso Optik angler me lo da de manera simple y cierra el evento
+
+16
+00:01:06,580 --> 00:01:08,170
+Dom predeterminado que se emite.
+
+17
+00:01:08,170 --> 00:01:11,090
+Y all conecta el objetivo y transmite el valor.
+
+18
+00:01:11,190 --> 00:01:19,960
+Entonces, se espera que la cadena que ingres el usuario tambin agregue un marcador de posicin a la entrada donde dicen FELTER.
+
+19
+00:01:20,040 --> 00:01:23,520
+Entonces este es ahora mi campo de entrada.
+
+20
+00:01:23,660 --> 00:01:30,310
+Luego quiero usar eso, as que necesito implementar el mtodo de filtro dual en mi componente.
+
+21
+00:01:30,440 --> 00:01:38,350
+As que all agregar un nuevo mtodo para filtrar donde obtendr el valor completo que ser una cadena.
+
+22
+00:01:38,390 --> 00:01:46,250
+As que esto es lo que el usuario ingres. S que puedo filtrar de manera muy simple simplemente accediendo a la fuente
+
+23
+00:01:46,610 --> 00:01:52,480
+de datos y estn configurando la propiedad del filtro igual a la cadena que obtuve aqu.
+
+24
+00:01:52,610 --> 00:02:00,650
+Entonces, para filtrar el valor, lo nico que quiero hacer es llamar a trim para eliminar cualquier espacio en blanco
+
+25
+00:02:00,650 --> 00:02:02,480
+y luego a minsculas.
+
+26
+00:02:02,510 --> 00:02:12,470
+La razn de esto es una fuente de datos de materiales angulares o angulares muertos o una tabla de materiales que
+
+27
+00:02:12,470 --> 00:02:16,160
+al final concatenar todos los valores de cero.
+
+28
+00:02:16,310 --> 00:02:22,580
+Entonces, si tenemos la duracin de las caloras y as sucesivamente junto a chavrusa pondr todo esto
+
+29
+00:02:22,580 --> 00:02:29,990
+en una fila y luego buscar nuestra cadena filtrada aqu en esa cadena larga que se crea al hacerlo as,
+
+30
+00:02:29,990 --> 00:02:37,880
+siempre tendr en cuenta todas nuestras filas y nosotros por lo tanto, debera proporcionar una cadena que est recortada y todo en
+
+31
+00:02:38,090 --> 00:02:44,690
+minscula porque angular tambin pondr su cadena larga en minscula para que tengamos una carcasa nica para la
+
+32
+00:02:44,690 --> 00:02:45,390
+que flaqueamos.
+
+33
+00:02:45,500 --> 00:02:47,890
+Y luego no tenemos que preocuparnos por la carcasa.
+
+34
+00:02:48,080 --> 00:02:54,380
+Puede anular su mecanismo de filtrado predeterminado y puede leer ms sobre esto en la pgina de la
+
+35
+00:02:54,410 --> 00:02:56,820
+tabla de datos haciendo clic en filtrar.
+
+36
+00:02:56,840 --> 00:03:04,120
+Ah ver que puede emitir su propia funcin de predicado de filtro si desea sobrescribir esto.
+
+37
+00:03:04,130 --> 00:03:09,470
+Ahora, de vuelta a nuestro portavasos, aunque aqu no quiero anularlo y en muchos casos no
+
+38
+00:03:09,470 --> 00:03:10,260
+quieres hacerlo.
+
+39
+00:03:10,460 --> 00:03:13,720
+As que aqu simplemente aseguremos que todos los archivos estn guardados.
+
+40
+00:03:13,970 --> 00:03:22,220
+Y luego inicie sesin rpidamente aqu e inicie un par de ejercicios y canclelos como antes.
+
+41
+00:03:22,340 --> 00:03:24,730
+Solo que tenemos algunos valores.
+
+42
+00:03:25,100 --> 00:03:35,510
+S, y ahora obtenemos las entradas de filtro que necesitamos para trabajar en el posicionamiento, pero funcionarn si entro.
+
+43
+00:03:35,520 --> 00:03:42,620
+Aqu puede ver con los cuatro punzones crujidos si ingreso una letra minscula si ingreso 0. 6 solo vemos las adoraciones del Mundo
+
+44
+00:03:42,630 --> 00:03:44,370
+Muerto Sirat 6.
+
+45
+00:03:44,520 --> 00:03:51,280
+Si mi filtro para pjaro ILEC la pieza de pjaro hace esto, qu fcil funciona.
+
+46
+00:03:51,300 --> 00:03:59,180
+Ahora asegurmonos de que el posicionamiento est bien y lo hago volviendo a mi
+
+47
+00:03:59,180 --> 00:04:07,970
+componente y hay dos H. T. archivo de correo y simplemente necesitamos crear un campo Hay campo en el campo de
+
+48
+00:04:08,030 --> 00:04:10,120
+entrada que colocamos encima de la tabla de materiales all.
+
+49
+00:04:10,130 --> 00:04:17,150
+Voy a envolver esto en una muerte as que vamos a envolver esto
+
+50
+00:04:20,150 --> 00:04:29,290
+y ponerlo en el div y agregar X, disea tus datos, disea una lnea para ser preciso y
+
+51
+00:04:31,910 --> 00:04:39,770
+pon esto en el centro del centro y dale un ancho del 40 por ciento.
+
+52
+00:04:39,770 --> 00:04:41,540
+Ahora echemos un vistazo a esto.
+
+53
+00:04:44,110 --> 00:04:50,290
+No es necesario que agreguemos nuevos valores para Nabl para poder ver esto, y si esto parece estar listo
+
+54
+00:04:50,290 --> 00:04:51,310
+para m, todos
+
+55
+00:04:55,940 --> 00:04:59,750
+deberan nombrar este marcador de posicin para ver el marcador de posicin.
+
+56
+00:05:00,000 --> 00:05:08,190
+Entonces, si vuelves una vez ms, deberamos tener un buen campo de carpeta buscando aqu sobre la tabla
+
+57
+00:05:08,190 --> 00:05:09,360
+de datos.
+
+58
+00:05:09,600 --> 00:05:15,660
+Adems, si aumentamos Dishon y ahora podemos ingresar nuestra cadena de filtro aqu y tener una tabla
+
+59
+00:05:15,660 --> 00:05:18,160
+de datos que funcione as de inmediato.
+

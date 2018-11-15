@@ -1,0 +1,304 @@
+1
+00:00:02,310 --> 00:00:07,900
+Es hora de agregar algo de proteccin de roud con eso quiero decir que no podemos alcanzar la ruta de entrenamiento
+
+2
+00:00:07,920 --> 00:00:09,380
+si no nos afecta bsicamente.
+
+3
+00:00:09,540 --> 00:00:12,040
+Y para eso podemos usar un guardia de ruta.
+
+4
+00:00:12,360 --> 00:00:18,310
+Ahora ir a la carpeta de apagado y agregar perros guardianes.
+
+5
+00:00:18,330 --> 00:00:28,000
+TS ahora exporta un Claassen aqu que todos nombraron desprevenido y esto realmente ser una clase de
+
+6
+00:00:28,000 --> 00:00:29,060
+mecanografa normal.
+
+7
+00:00:29,450 --> 00:00:37,430
+Implementar una cierta interfaz a travs de una interfaz que necesita importarse desde un
+
+8
+00:00:37,460 --> 00:00:38,460
+enrutador angular.
+
+9
+00:00:38,840 --> 00:00:40,800
+Ahora que interfaz es esta.
+
+10
+00:00:40,820 --> 00:00:44,300
+Es la interfaz de activar can.
+
+11
+00:00:44,360 --> 00:00:50,810
+Entonces, para este colosal Abdy implementa la palabra clave y luego implementa que puede activar la interfaz.
+
+12
+00:00:51,140 --> 00:00:56,760
+Y esto ahora me obliga a agregar un mtodo de activar can en este mtodo.
+
+13
+00:00:56,930 --> 00:00:59,870
+Realmente obtenemos un par de argumentos diferentes.
+
+14
+00:00:59,960 --> 00:01:10,830
+El primer argumento es la ruta que estamos tratando de activar, es de tipo instantnea de ruta activada que realmente
+
+15
+00:01:10,850 --> 00:01:13,770
+importa desde el paquete del enrutador.
+
+16
+00:01:13,880 --> 00:01:16,820
+Por lo tanto, lo mismo que solamos importar puede
+
+17
+00:01:19,650 --> 00:01:27,010
+activar el segundo argumento que recibimos aqu es el estado de enrutamiento actual en el que los enrutadores indican una instantnea.
+
+18
+00:01:27,180 --> 00:01:33,470
+Y esto tambin lo importa desde el paquete de enrutador angular y no desde ningn otro paquete.
+
+19
+00:01:34,550 --> 00:01:42,380
+Entonces este mtodo ser ejecutado por anglosajn en los EE. UU. Con la guardia baja cada vez que nos topemos con l
+
+20
+00:01:42,380 --> 00:01:49,940
+y le mostraremos cmo lo conectamos a nuestra ruta y un segundo que el fuera de guardia no est completo aunque
+
+21
+00:01:49,940 --> 00:01:56,820
+necesite devolver la verdad o una promesa que resuelva a verdadero o un observable que se resuelve en verdadero.
+
+22
+00:01:57,140 --> 00:02:02,100
+As que aqu voy a volver verdad por ahora.
+
+23
+00:02:02,110 --> 00:02:05,490
+Ahora eso sera correcto y siempre nos dara acceso.
+
+24
+00:02:05,540 --> 00:02:09,000
+Ahora, en lugar de curso, quiero verificar si el usuario est ofendido.
+
+25
+00:02:09,290 --> 00:02:17,120
+Entonces, en el decorador inyectable de aqu, que debe importarse en angulografa computarizada, lo aado para que puedan
+
+26
+00:02:20,030 --> 00:02:26,570
+inyectar el ao fuera del servicio porque el servicio fuera es la parte donde descubrimos
+
+27
+00:02:26,570 --> 00:02:29,680
+dnde el usuario est ofendindolo o no. .
+
+28
+00:02:30,050 --> 00:02:39,260
+Entonces inyectar el servicio de apagado y para eso debe asegurarse de importar el servicio fuera de servicio.
+
+29
+00:02:39,470 --> 00:02:44,710
+Ahora con el oficial que lo tiene a l o que podemos asignar este hype aqu e inyectarlo.
+
+30
+00:02:45,020 --> 00:02:52,130
+Y ahora puedes activar no son verdaderos, pero te acercas para estar de servicio y devuelto o algo
+
+31
+00:02:52,130 --> 00:03:00,770
+as como mi mtodo de apagado que tenemos ahora est fuera de Meffert si recuerdas es este mtodo aqu que registra quienquiera
+
+32
+00:03:01,160 --> 00:03:03,320
+que sea el usuario o no.
+
+33
+00:03:03,320 --> 00:03:06,410
+Y no se dir si el usuario no se ve afectado.
+
+34
+00:03:06,410 --> 00:03:12,110
+As que aqu solo devolvemos la verdad y, por lo tanto, otorgamos acceso a la ruta que queramos cargar.
+
+35
+00:03:12,260 --> 00:03:20,270
+Si ahora es cierto, realmente regresa solo que no es suficiente, tenemos que hacer algo si no es cierto porque
+
+36
+00:03:20,330 --> 00:03:24,570
+nuestro enrutamiento inteligente no se va a utilizar, nos atascamos.
+
+37
+00:03:24,980 --> 00:03:29,180
+As que verificare si dys devuelve verdadero.
+
+38
+00:03:31,330 --> 00:03:33,820
+Y si este es el caso
+
+39
+00:03:33,820 --> 00:03:44,530
+Entonces, si lo hacemos en este cheque aqu, devolver true; de lo contrario, si esto falla, quiero redirigir al
+
+40
+00:03:44,530 --> 00:03:45,270
+usuario.
+
+41
+00:03:45,460 --> 00:03:50,030
+Entonces inyectar el enrutador angular aqu.
+
+42
+00:03:51,170 --> 00:04:02,390
+Lo cual tambin importo desde el paquete de enrutadores angulares y con lo inyectado aqu, llamar a este enrutador y
+
+43
+00:04:03,060 --> 00:04:10,130
+ahora navegar para cortar el registro, que es donde quiero redirigir al usuario.
+
+44
+00:04:10,230 --> 00:04:15,610
+Si intenta acceder al enrutador no fue autenticado con eso el guardia configur.
+
+45
+00:04:15,600 --> 00:04:18,440
+La pregunta es cmo lo usamos.
+
+46
+00:04:19,270 --> 00:04:23,220
+Y la respuesta es que lo adjuntamos a una ruta en nuestra configuracin de enrutamiento.
+
+47
+00:04:23,290 --> 00:04:30,640
+Entonces, en el mdulo de enrutamiento de aplicaciones aqu obtenemos nuestra ruta de capacitacin que debe
+
+48
+00:04:30,640 --> 00:04:38,110
+protegerse y podemos protegerla agregando una nueva propiedad a la configuracin de ruta que se llama puede
+
+49
+00:04:38,110 --> 00:04:46,870
+activar y esta es una matriz de clases que todos deben implementar. Puede ser extrao interfaz porque angular ejecutar el
+
+50
+00:04:46,900 --> 00:04:52,000
+mtodo puede activar esa interfaz nos obliga a implementar para nosotros.
+
+51
+00:04:52,000 --> 00:04:58,140
+Entonces este mtodo ser ejecutado por angular y para uno o dos ejecutados.
+
+52
+00:04:58,210 --> 00:05:05,260
+Bueno, tenemos que agregar nuestro Kinect con protector para disquete serie de actuadores para esta ruta donde
+
+53
+00:05:05,260 --> 00:05:06,040
+queremos usarlo.
+
+54
+00:05:06,400 --> 00:05:15,310
+As que aqu voy a agregar mi fuera de guardia y tenemos que agregar una o dos pulgadas con la guardia baja desde el archivo
+
+55
+00:05:15,310 --> 00:05:17,680
+de proteccin en la carpeta de apagado.
+
+56
+00:05:17,680 --> 00:05:20,680
+Y con eso esa ruta ahora est protegida.
+
+57
+00:05:20,680 --> 00:05:26,690
+Ahora hay una pequea cosa que falta, no es obvio, pero est fuera de guardia.
+
+58
+00:05:26,690 --> 00:05:31,740
+Detrs de las escenas se trata como un servicio que se inyecta por angular.
+
+59
+00:05:31,760 --> 00:05:37,910
+A pesar de que no inyectamos fumigadores para nosotros y por das para trabajar, tenemos que proporcionarlo.
+
+60
+00:05:37,910 --> 00:05:44,750
+Ahora, normalmente, proporcionamos un mdulo profundo, pero aqu podemos proporcionar el mdulo de enrutamiento de la aplicacin,
+
+61
+00:05:44,750 --> 00:05:48,170
+ya que todava estar disponible para toda la aplicacin.
+
+62
+00:05:48,350 --> 00:05:54,170
+Pero solo lo usamos aqu en la seccin de enrutamiento y podemos aclararlo al agregar
+
+63
+00:05:54,860 --> 00:05:55,560
+proveedores aqu.
+
+64
+00:05:55,670 --> 00:05:58,370
+Entonces proveedores de guardia.
+
+65
+00:05:58,670 --> 00:06:00,160
+Y esta es una rara excepcin.
+
+66
+00:06:00,260 --> 00:06:07,370
+Normalmente debe proporcionar en el mdulo de la aplicacin o directamente en un componente, pero las protecciones estn bien para proporcionarse
+
+67
+00:06:07,370 --> 00:06:09,050
+en el mdulo de enrutamiento.
+
+68
+00:06:09,050 --> 00:06:20,290
+Ahora con eso podemos ir a nuestra aplicacin y si ahora intento acceder al entrenamiento de barra aqu, ver que
+
+69
+00:06:20,290 --> 00:06:27,170
+me redireccionaron para cortar el registro si no me conecto con xito.
+
+70
+00:06:28,280 --> 00:06:30,030
+Y no voy a entrenar
+
+71
+00:06:30,230 --> 00:06:31,990
+Tengo permitido acceder a esto.
+
+72
+00:06:32,000 --> 00:06:33,820
+No soy redirigido aqu.
+
+73
+00:06:34,160 --> 00:06:37,280
+Entonces esta es la proteccin de ruta que se agrega.
+
+74
+00:06:37,280 --> 00:06:45,320
+Esto fue un montn de trabajo en educacin, y mucho ms, y en Portland, pero promet tambin trabajar en los datos de
+
+75
+00:06:45,320 --> 00:06:49,830
+capacitacin y agregar componentes de materiales angulares que dependan de los datos.
+
+76
+00:06:49,970 --> 00:06:52,180
+Bueno, trabajaremos en esto el prximo.
+
